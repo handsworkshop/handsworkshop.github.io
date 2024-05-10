@@ -1,82 +1,198 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><style>.line-scale-pulse-out {
-            margin: 0 auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--- <title></title> --->
+<title>HANDS Workshop</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<div id="main-container">
+<div id="header-container">
+<div id="header">
+<div id="header-icon-text-container">
+<!--
+<div id="header-icon-container" >
+<a href="index.html"><img src="./images/icon.png" alt="" style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a>
+</div>
+-->
+<div id="header-text-container">
+<a href="index.html">HANDS Workshop</a>
+</div>
+</div>
+<!--
+<div id="main">
+<button class="openbtn" onclick="openNav()">☰</button>
+</div>
+-->
+</div>
+</div>
+<div id="layout-content">
+<div id="text-img-container"><div id="img-container">
+<a href="https://hands-workshop.org/"><img src="./logos/hands.png" alt="HANDS" width="100%" /></a></div>
+<div id="text-container"></div></div>
+<p>
+<div id="beamer">
+<beam> 
+Observing and Understanding <b>Hands</b> in Action
+</beam></br>
+<beams>
+in conjunction with ECCV 2024</br>
+</beams>
+</div>
+</p>
+<h1>Overview </h1>
+<font size="5">  
+    Welcome to our HANDS@ECCV24.
+</font>  
+</br>
+</br>
+<p>Our HANDS workshop will gather vision researchers working on perceiving hands performing actions, including 2D &amp; 3D hand detection, segmentation, pose/shape estimation, tracking, etc. We will also cover related applications including gesture recognition, hand-object manipulation analysis, hand activity understanding, and interactive interfaces.</p>
+<p>The eighth edition of this workshop will emphasize the use of large foundation models (<i>e.g.</i> CLIP, Point-E, Segment Anything, Latent Diffusion Models) for hand-related tasks. These models have revolutionized the perceptions of AI, and demonstrate groundbreaking contributions to multimodal understanding, zero-shot learning, and transfer learning. However, there remains an untapped potential for exploring their applications in hand-related tasks.</p>
+<style>
+  .left-column {
+    float: left;
+    width: 50%;
+    line-height: 1.5;
+    height: 280px;
+  }
 
-        .line-scale-pulse-out>div {
-            display: inline-block;
-            font-size: 18px;
-            font-weight: bold;
-            color: #6765FF;
-            animation-name: myfirst;
-            animation-duration: 2s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-play-state: running;
-            /* Safari 与 Chrome: */
-            -webkit-animation-name: myfirst;
-            -webkit-animation-duration: 2s;
-            -webkit-animation-timing-function: linear;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: normal;
-            -webkit-animation-play-state: running;
-        }
+  .right-column {
+    float: right;
+    width: 50%;
+    line-height: 1.5;
+    height: 280px;
+  }
+</style>
 
-        @keyframes myfirst {
-            0% {
-                color: white;
-            }
+<div class="left-column">
+<ul>
+<li>Hand pose and shape estimation </li>
+<li>Hand & object interactions</li>
+<li>Hand detection/segmentation</li>
+<li>Hand gesture/action recognition</li>
+<li>4D hand tracking and motion capture</li>
+<li>Hand motion synthesis</li>
+<li>Generalization and adaptation</li>
+<li>Robot grasping, object manipulation</li>
+</ul>
+</div>
 
-            50% {
-                color: #6765FF;
-            }
+<div class="right-column">
+<ul>
+<li>Hand modeling, rendering, generation</li>
+<li>Camera systems and annotation tools</li>
+<li>Novel algorithms and network architectures</li>
+<li>Multi-modal learning</li>
+<li>Self-/un-/weakly-supervised learning</li>
+<li>Egocentric vision for AR/VR</li>
+<li>Haptics</li>
+</ul>
+</div>
 
-            100% {
-                color: white;
-            }
-        }
-
-        @-webkit-keyframes myfirst
-
-        /* Safari and Chrome */
-            {
-            0% {
-                color: white;
-            }
-
-            50% {
-                color: #6765FF;
-            }
-
-            100% {
-                color: white;
-            }
-        }
-
-        .line-scale-pulse-out>div:nth-child(1) {
-            -webkit-animation-delay: -.5s !important;
-            animation-delay: -.5s !important
-        }
-
-        .line-scale-pulse-out>div:nth-child(2) {
-            -webkit-animation-delay: -.4s !important;
-            animation-delay: -.4s !important
-        }
-
-        .line-scale-pulse-out>div:nth-child(3) {
-            -webkit-animation-delay: -.3s !important;
-            animation-delay: -.3s !important
-        }
-
-        .line-scale-pulse-out>div:nth-child(4) {
-            -webkit-animation-delay: -.2s !important;
-            animation-delay: -.2s !important
-        }
-
-        .line-scale-pulse-out>div:nth-child(5) {
-            -webkit-animation-delay: -.1s !important;
-            animation-delay: -.1s !important
-        }</style><link rel="shortcut icon" href=./favicon.ico><link href=./static/css/app.4f4aa12d7fa1162bd102e92939fcd798.css rel=stylesheet></head><body><div id=app><div style=width:50vw;height:50vh;background:white;></div></div><script type=text/javascript src=./static/js/manifest.275cb5071d92269581e1.js></script><script type=text/javascript src=./static/js/vendor.79119923b717307ace5e.js></script><script type=text/javascript src=./static/js/app.66f8b00d88fbb2f987bb.js></script></body></html>
+<h1>Schedule</h1>
+<p>TBD</p>
+<h1>Call for Papers</h1>
+<p>We will call for full length submissions with published proceedings via the CMT system. Also, we will invite submission of 2-3 page extended abstracts and recent hand-related papers/posters to the workshop.</p>
+<h1>Challenges</h1>
+<p>We will present the HANDS24 challenge based on <a href="https://assemblyhands.github.io/" target=&ldquo;blank&rdquo;>AssemblyHands</a>, <a href="https://arctic.is.tue.mpg.de/" target=&ldquo;blank&rdquo;>ARCTIC</a>, <a href="https://oakink.net/v2/" target=&ldquo;blank&rdquo;>OakInk2</a> and <a href="https://research.facebook.com/publications/umetrack-unified-multi-view-end-to-end-hand-tracking-for-vr/" target=&ldquo;blank&rdquo;>UmeTrack</a>. More details will be released later. Looking forward to your participation.</p>
+<h1>Invited Speakers</h1>
+<p>TBD</p>
+<h1>Organizers</h1>
+<p>
+<div id="member-container">
+<div id="member">
+<img src="./profiles/hyung.jpg">
+<p>
+<b><a href="https://hyungjinchang.wordpress.com">Hyung Jin Chang</a></b></br>
+University of Birmingham
+</p>
+</div>
+<div id="member">
+<img src="./profiles/zicong.png">
+<p>
+<b><a href="https://zc-alexfan.github.io">Zicong Fan</a></b></br>
+ETH Zurich
+</p>
+</div> 
+<div id="member">
+<img src="./profiles/otmar.png">
+<p>
+<b><a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a></b></br>
+ETH Zurich
+</p>
+</div>
+<div id="member">
+<img src="./profiles/kun.png">
+<p>
+<b><a href="https://kunhe.github.io">Kun He</a></b></br>
+Meta Reality Labs
+</p>
+</div>
+<div id="member">
+<img src="./profiles/take.png">
+<p>
+<b><a href="https://tkhkaeio.github.io/">Take Ohkawa</a></b></br>
+University of Tokyo
+</p>
+</div>
+<div id="member">
+<img src="./profiles/yoichi.png">
+<p>
+<b><a href="https://sites.google.com/ut-vision.org/ysato/home">Yoichi Sato</a></b></br>
+University of Tokyo
+</p>
+</div>
+<div id="member">
+<img src="./profiles/linlin.png">
+<p>
+<b><a href="https://mu4yang.com">Linlin Yang</a></b></br>
+Communication University of China 
+</p>
+</div>
+<div id="member">
+<img src="./profiles/lixin.png">
+<p>
+<b><a href="https://lixiny.github.io">Lixin Yang</a></b></br>
+Shanghai Jiao Tong University
+</p>
+</div>
+<div id="member">
+<img src="./profiles/angela.png">
+<p>
+<b><a href="https://www.comp.nus.edu.sg/cs/people/ayao/">Angela Yao</a></b></br>
+National University of Singapore
+</p>
+</div>
+<div id="member">
+<img src="./profiles/linguang.png">
+<p>
+<b><a href="https://lg-zhang.github.io/">Linguang Zhang</a></b></br>
+Facebook Reality Labs (Oculus)
+</p>
+</div>
+</div>
+</p>
+<h1>Contact</h1>
+<p>lyang@cuc.edu.cn</p>
+<div id="footer">
+<div id="footer-text">
+Last edited  on May 10<sup>th</sup> 2024  11:41PM (Time Zone: CST). </br>
+</div>
+</div>
+</div>
+</body>
+</html>
