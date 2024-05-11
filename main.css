@@ -9,39 +9,6 @@ body {
 	margin: 0;
 }
 
-.left-column {
-  float: left;
-  width: 50%;
-  line-height: 1.5;
-  bottom: 0;
-}
-
-.right-column {
-  float: right;
-  width: 50%;
-  line-height: 1.5;
-  bottom: 0;
-}
-
-.box {
-width: 100%;
-height: 100%;
-position: relative;
-}
-.box:after {
-	content: "";
-	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-      }
-.box span {
-	width: 100%;
-	height: 100%;
-	display: inline-block;
-	text-align: center;
-}
-
-
 div#main-container {
 	min-height: 100vh;
 	background: white;
