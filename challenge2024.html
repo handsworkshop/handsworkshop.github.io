@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta name="keywords" content="hands,ECCV 2024,workshop,AssemblyHands,ARCTIC,OakInk2,UmeTrack,pose estimation,MANO,challenge,keypoint,gesture,robot,grasping,manipulation,hand tracking,motion capture">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!--- <title></title> --->
+  <title>HANDS Workshop</title>
+  <!-- MathJax -->
+
+  <!-- End MathJax -->
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="header-container">
+      <div id="header">
+        <div id="header-icon-text-container">
+          <div id="header-text-container">
+            <nav class="style1">
+              <ul id="outer_list">
+                <li id="outer_li_year"><a id="current_year" href="#">2024<span id="arrow"></span></a>
+                  <ul id="top_list">
+                    <!-- <li id="style2"><a id="style3" href="workshop2023.html">2023</a></li> -->
+                    <li id="style2"><a id="style3" href="workshop2024.html">2024</a></li>
+                  </ul>
+                </li>
+
+                <li id="outer_li"><a id="workshop_link" href="#">Workshop</a>
+                </li>
+
+                <li id="outer_li"><a id="challenge_link" href="#">Challenge</a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+      <div id="layout-content">
+        <div id="text-img-container">
+          <div id="img-container">
+            <a href="https://hands-workshop.org/"><img src="./logos/hands.png" alt="HANDS" width="100%" /></a>
+          </div>
+          <div id="text-container"></div>
+        </div>
+        <p>
+        <div id="beamer">
+          <beam>
+            Observing and Understanding <b>Hands</b> in Action
+          </beam></br>
+          <beams>
+            in conjunction with ECCV 2024</br>
+          </beams>
+        </div>
+        <br>
+        <div id="menu-container">
+          <div id="menu-item"><a id="style6" href="#overview">Overview</a></div>
+          <div id="menu-item"><a id="style6" href="#challenge1">Assembly</a></div>
+          <div id="menu-item"><a id="style6" href="#challenge2">ARCTIC</a></div>
+          <div id="menu-item"><a id="style6" href="#challenge3">OakInk2</a></div>
+          <div id="menu-item"><a id="style6" href="#challenge4">UmeTrack</a></div>
+        </div>
+        <br>
+        </p>
+        <h1 id="overview">Overview</h1>
+        <p>TBD</p>
+
+        <h1 id="challenge1">AssemblyHands </h1>
+        <p>TBD</p>
+
+        <h1 id="challenge2">ARCTIC </h1>
+        <p>TBD</p>
+
+        <h1 id="challenge3">OakInk2 </h1>
+        <p>TBD</p>
+
+        <h1 id="challenge4">UmeTrack </h1>
+        <p>TBD</p>
+
+
+      </div>
+
+    </div>
+    <script>
+      document.getElementById('outer_li_year').addEventListener('click', function (event) {
+        event.preventDefault(); // 阻止默认链接行为
+        // 获取第一个<li>标签中的年份
+        var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+        // 构建新的href
+        var newHref = 'workshop' + year + '.html';
+        // 跳转到新的页面
+        window.location.href = newHref;
+      });
+      document.getElementById('workshop_link').addEventListener('click', function (event) {
+        event.preventDefault(); // 阻止默认链接行为
+        // 获取第一个<li>标签中的年份
+        var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+        // 构建新的href
+        var newHref = 'workshop' + year + '.html';
+        // 跳转到新的页面
+        window.location.href = newHref;
+      });
+      document.getElementById('challenge_link').addEventListener('click', function (event) {
+        event.preventDefault(); // 阻止默认链接行为
+        // 获取第一个<li>标签中的年份
+        var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+        // 构建新的href
+        var newHref = 'challenge' + year + '.html';
+        // 跳转到新的页面
+        window.location.href = newHref;
+      });
+      // 获取所有带有id="style3"的a标签
+      var yearLinks = document.querySelectorAll('#style3');
+
+      yearLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault(); // 阻止默认链接行为
+
+          // 获取点击的年份
+          var selectedYear = this.textContent.trim();
+
+          // 更新第一个li中的年份显示
+          document.getElementById('current_year').textContent = selectedYear;
+
+          // 关闭下拉菜单
+          // document.getElementById('top_list').style.display = 'none';
+
+          // 可选：如果需要，可以在这里添加跳转逻辑
+          window.location.href = this.href;
+        });
+      });
+
+      var workshopLi1 = document.querySelector('#challenge_link');
+      workshopLi1.classList.add('highlight');
+    </script>
+</body>
+
+</html>

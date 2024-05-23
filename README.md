@@ -1,4 +1,4 @@
-# Temporal localization and segmentation tutorial page.
+The HTML template comes from [here](https://nus-cvml.github.io/atlas-eccv22).
 
 
-atlas-eccv22.github.io has been redirected to [here](https://nus-cvml.github.io/atlas-eccv22).
+Our website is [here](https://hands-workshop.org)
