@@ -512,6 +512,7 @@ table.dataintable {
   border-collapse:collapse;
   border:0px solid #aaa;
   width:100%;
+  line-height: 1.7;
 }
 table.dataintable th {
   vertical-align:baseline;
@@ -935,4 +936,33 @@ a:hover#style6 {
 	border-radius: 2px;
 }
 
+ul#topicstyle1 {
+	columns: 2;
+	/* 将列表项分成两列 */
+	-webkit-columns: 2;
+	/* 兼容性设置 */
+	-moz-columns: 2;
+	/* 兼容性设置 */
+	margin-left: 20px;
+	padding-left: 20px;
+	margin-top: 6px;
+	/* 给列表项加入左侧内边距，确保看起来对齐 */
+	line-height: 1.2;
+}
+
+ul>li#topicstyle2 {
+	list-style-type: none;
+	/* 取消默认的列表标记 */
+	position: relative;
+	/* 设置为相对定位 */
+	margin-top: 5px;
+}
+
+ul>li#topicstyle2:before {
+	content: "- ";
+	/* 在每个列表项前加上 "-" */
+	position: absolute;
+	left: -10px;
+	/* 调整 "-" 的位置 */
+}
 
