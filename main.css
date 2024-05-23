@@ -966,3 +966,21 @@ ul>li#topicstyle2:before {
 	/* 调整 "-" 的位置 */
 }
 
+img#page {
+	width: 36px;
+	height: 36px;
+	float: center;
+	margin-left: 50px;
+	cursor: pointer;
+	border-radius: 18px;
+}
+
+img#page1 {
+	width: 36px;
+	height: 36px;
+	float: center;
+	/* margin-left: 50px; */
+	cursor: pointer;
+	border-radius: 18px;
+}
+
