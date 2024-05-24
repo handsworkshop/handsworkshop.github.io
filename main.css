@@ -875,7 +875,7 @@ div:active#menu-item {
 }
 
 div#menu-item {
-	width: 120px;
+	width: 160px;
 	margin: 0px;
 	display: inline-block;
 	cursor: pointer;
@@ -893,7 +893,7 @@ a#style6 {
 
 	display: inline-block;
 	padding: 10px 20px;
-	width: 80px;
+	width: 120px;
 /*	background-color: #4CAF50;*/
 	background-color: #bdbcbb;
 	color: white;
