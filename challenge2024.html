@@ -158,10 +158,62 @@
 
         <div style= "background-color: #e9e9e9; border: 1px solid black; text-align: center;">The Offical Website of AssemblyHands Track: TBD</div>
 
-        <h1 id="challenge2">ARCTIC </h1>
-        <p>Most methods for reconstructing hand-object interactions typically require a pre-scanned 3D object template, which is impractical for real-world scenarios. To address this, we host the category-agnostic reconstruction task where participants must reconstruct both hands and the object in 3D from a single video, without relying on pre-scanned templates. We offer 11 videos from the ARCTIC dataset's rigid object collection, one per object,  and sourced from the test set for this challenge.</p>
+        <h1 id="challenge2">ARCTIC</h1>
 
-        <div style= "background-color: #e9e9e9; border: 1px solid black; text-align: center;">The Offical Website of ARCTIC Track: TBD</div>
+
+        <p>
+          Humans interact with various objects daily, making holistic 3D capture of these interactions crucial for modeling human behavior. Most methods for reconstructing hand-object interactions require pre-scanned 3D object templates, which are impractical in real-world scenarios. Recently, HOLD (<a href="https://zc-alexfan.github.io/hold">Fan et al. CVPR’24</a>) has shown promise in category-agnostic hand-object reconstruction but is limited to single-hand interaction.
+        </p>
+
+        <p>
+          Since we naturally interact with both hands, we host the bimanual category-agnostic reconstruction task where participants must reconstruct both hands and the object in 3D from a video clip, without relying on pre-scanned templates. This task is more challenging as bimanual manipulation exhibits severe hand-object occlusion and dynamic hand-object contact, leaving rooms for future development.
+        </p>
+
+        <p align="center" style="margin: 2; padding: 2;">
+          <img src="assets/arctic/sushi.gif" alt="Image" width="100%" style="display: block; margin: 0 auto;" />
+        </p>
+
+        <p>
+          To benchmark this challenge, we adapt HOLD to two-hand manipulation settings and use 9 videos from <a href="https://github.com/zc-alexfan/arctic">ARCTIC dataset</a>'s rigid object collection, one per object (excluding small objects such as scissors and phone), and sourced from the test set for this challenge.
+
+          You will be provided with HOLD baseline skeleton code for the ARCTIC setting, as well as code to produce data for our evaluation server to evaluate.
+        </p>
+
+
+          <h3>Important Notes</h3>
+          <ul>
+          <li>Submission deadline for results: September 15, 2024 (11:59PM PST) </li>
+          <li>Results will be shared during the HANDS workshop at ECCV 2024 on September 30, 2024</li>
+          </ul>
+
+          <h3>Rules</h3>
+          <ul>
+            <li>Participants cannot use groundtruth intrinsics, extrinsics, hand/object annotations, or object templates from ARCTIC.</li>
+            <li>Only use the provided pre-cropped ARCTIC images for the competition.</li>
+            <li>The test set groundtruth is hidden; submit predictions to our evaluation server for assessment (details coming soon).</li>
+            <li>Different hand trackers or methods to estimate object pose can be used if not trained on ARCTIC data.</li>
+            <li>Participants may need to submit code for rule violation checks.</li>
+            <li>The code must be reproducible by the organizers.</li>
+            <li>Reproduced results should match the reported results.</li>
+            <li>Participants may be disqualified if results cannot be reproduced by the organizers.</li>
+            <li>Methods must show non-trivial novelty; minor changes like hyperparameter tuning do not count.</li>
+            <li>Methods must outperform the HOLD baseline by at least 5% to be considered valid, avoiding small margin improvements due to numerical errors.</li>
+            <li>We reserve the right to determine if a method is valid and eligible for awards.</li>
+          </ul>
+
+          <p><b>Metric: </b>We use hand-relative chamfer distance, CD_h, (the lower the better) as the main metric for this competition. It is defined in the <a href="https://arxiv.org/abs/2311.18448">HOLD paper</a>. For this two-hand setting, we average the left and right hand CD_h metrics.</p>
+          <p><b>Support: </b>For general tips on processing and improvement on HOLD (see <a href="https://github.com/zc-alexfan/hold/issues/6">here</a>). For other technical questions, raise an issue. Should you have any confusion regarding the ARCTIC challenge (e.g., regarding to the rules above), feel free to contact zicong.fan@inf.ethz.ch.</p>
+
+          <div style= "background-color: #e9e9e9; border: 1px solid black; text-align: center;">
+
+          <h4 align="center">Check out the following links to get started</h4>
+          <h4 align="center">HOLD project page: <a href="https://zc-alexfan.github.io/hold"><b>https://zc-alexfan.github.io/hold</b></a></h4>
+          <h4 align="center">HOLD code: <a href="https://github.com/zc-alexfan/hold"><b>https://github.com/zc-alexfan/hold</b></a></h4>
+          <h4 align="center">Challenge instructions: <a href="https://github.com/zc-alexfan/hold/blob/master/docs/arctic.md"><b>https://github.com/zc-alexfan/hold/blob/master/docs/arctic.md</b></a></h4>
+          <h4 align="center">Leaderboard: <a href="https://arctic-leaderboard.is.tuebingen.mpg.de/leaderboard"><b>https://arctic-leaderboard.is.tuebingen.mpg.de/leaderboard</b></a></h4>
+          <h4 align="center">ARCTIC dataset: <a href="https://arctic.is.tue.mpg.de/"><b>https://arctic.is.tue.mpg.de/</b></a></h4>
+
+          </div>
 
         <h1 id="challenge3">OakInk2 </h1>
         <p>Synthesizing physically plausible hand-object interactions that leverage object functionalities remains to be a challenging task. We host the challenge where the participants need to synthesize hand trajectories capable of accomplishing specific task objectives within a designated simulation environment. The synthesis process will be based on a limited number of demonstrations of the same task, along with reference frames for the target environment. We identity tasks involving object relocation and manipulation from OakInk2 for this challenge.</p>
