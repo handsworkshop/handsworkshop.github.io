@@ -153,10 +153,52 @@
 
 
 
-        <h1 id="challenge1">AssemblyHands </h1>
-        <p>We offer an extended version of the AssemblyHands challenge hosted in HANDS23. With increasing attention to multi-view AR/VR headsets (<i>e.g.</i> Apple Vision Pro, Meta Quest, etc.), we extend this realm to multi-view settings. Specifically, we benchmark a track for single-view-to-dual-view adaptation of 3D hand pose estimation using the AssemblyHands dataset.</p>
+        <h1 id="challenge1">AssemblyHands-S2D (2nd edition) </h1>
+            <p>
+            <a href="https://assemblyhands.github.io/">AssemblyHands</a> is a large-scale benchmark with accurate 3D hand pose annotations to facilitate the study of egocentric activities with challenging hand-object interactions.  The 1st edition of this challenge at ICCV'23 featured egocentric 3D hand pose estimation from a single-view image and made significant progress on the single-view estimation.
+            </p>
 
-        <div style= "background-color: #e9e9e9; border: 1px solid black; text-align: center;">The Offical Website of AssemblyHands Track: TBD</div>
+            <p align="center" style="margin: 2; padding: 2;">
+                <img src="assets/assemblyhands/s2dhand_hlong.png" alt="Image" width="80%" style="display: block; margin: 0 auto;"/>
+            </p>
+
+            <p>
+            At ECCV’24, we offer an extended AssemblyHands challenge for multi-view settings, dubbed single-view-to-dual-view adaptation of 3D hand pose estimation (<a ref="https://github.com/ut-vision/S2DHand">S2DHand</a>). Given a pre-trained single-view estimator, participants are asked to develop unsupervised adaptation algorithms to arbitrary-placed dual-view images, assuming camera parameters and keypoint ground-truth of these views are not given. This adaptation would bridge the gap of camera settings more flexibly and allow us to test various camera configurations for better multi-view hand pose estimation. The details of the challenge rules, data, and evaluation are as follows.
+            </p>
+
+            <h3>Rules</h3>
+            <p>
+            <ul>
+                <li>Only use the provided pre-trained weights for adaptation. In order to align the backbone capacity across submissions, <b>DO NOT</b> increase the backbone model size or begin adaptation from your own checkpoints.</li>
+                <li><b>DO NOT</b> use keypoint ground-truth from AssemblyHands when developing methods, including re-training and camera parameter estimation.</li>
+                <li><b>DO NOT</b> use annotated camera extrinsics from AssemblyHands in any ways, including using extrinsics to select training samples.</li>
+                <li><b>DO NOT</b> use the validation set for training or fine-tuning.</li>
+                <li><b>DO NOT</b> use any other data and annotations from Assembly101.</li>
+                <li>It is permitted to use hand mesh models (e.g., MANO).</li>
+                <li>Participants only allow the use of two-view images during testing. <b>DO NOT</b> use more than two views of test data.</li>
+                <li>We reserve the right to determine if a method is valid and eligible for awards.</li>
+            </ul>
+            </p>
+          <p><b>Metric: </b> We use wrist-relative MPJPE for each dual-camera pair.</p>
+          <p><b>Update Notes: </b><br>
+            (July 4): We're constructing the dataset and evaluation server tailored for this challenge. Check the S2DHand project for the reference of this task.
+        </p> 
+        <p>
+            If you have any questions regarding task, rules, and technical issues, please contact via the hands group email.
+            Challenge committee: Ruicong Liu, Takehiko Ohkawa, and Kun He
+          </p>            
+
+        
+
+        <div style= "background-color: #e9e9e9; border: 1px solid black; text-align: center;">
+
+            <h4 align="center">Check out the following links to get started</h4>
+            <h4 align="center">S2DHand project page: <a href="https://github.com/ut-vision/S2DHand"><b>https://github.com/ut-vision/S2DHand</b></a></h4>
+            <h4 align="center">Code for this challenge: <a href="TBD"><b>TBD</b></a></h4>
+            <h4 align="center">Leaderboard: <a href="TBD"><b>TBD</b></a></h4>
+            <h4 align="center">AssemblyHands dataset: <a href="https://assemblyhands.github.io/"><b>https://assemblyhands.github.io/</b></a></h4>
+  
+            </div>
 
         <h1 id="challenge2">ARCTIC</h1>
 
