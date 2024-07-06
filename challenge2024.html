@@ -244,13 +244,13 @@
             <h3>Rules</h3>
             <p>
             <ul>
-                <li>Only use the provided pre-trained weights for adaptation. In order to align the backbone capacity across submissions, <b>DO NOT</b> increase the backbone model size or begin adaptation from your own checkpoints.</li>
-                <li><b>DO NOT</b> use keypoint ground-truth from AssemblyHands when developing methods, including re-training and camera parameter estimation.</li>
-                <li><b>DO NOT</b> use annotated camera extrinsics from AssemblyHands in any ways, including using extrinsics to select training samples.</li>
+                <li>Only use the provided pre-trained weights for adaptation. In order to align the backbone capacity across submissions, <b>DO NOT</b> increase the backbone model size or use other backbone networks.</li>
+                <li><b>DO NOT</b> use keypoint ground-truth of validation and test sets from AssemblyHands in any ways, including re-training and camera parameter estimation.</li>
+                <li><b>DO NOT</b> use annotated camera extrinsics from AssemblyHands in any ways, including selecting training samples with extrinsics.</li>
                 <li><b>DO NOT</b> use the validation set for training or fine-tuning.</li>
                 <li><b>DO NOT</b> use any other data and annotations from Assembly101.</li>
                 <li>It is permitted to use hand mesh models (e.g., MANO).</li>
-                <li>Participants only allow the use of two-view images during testing. <b>DO NOT</b> use more than two views of test data.</li>
+                <li>Participants only allow the use of two-view images during adaptation. </li>
                 <li>We reserve the right to determine if a method is valid and eligible for awards.</li>
             </ul>
             </p>
