@@ -487,12 +487,13 @@ td {
 */
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
- 
-td,th {
-    padding: 0;
+
+td,
+th {
+	padding: 0;
 }
 
 table+table {
@@ -508,30 +509,34 @@ table+table {
 }
 
 table.dataintable {
-  margin-top:15px;
-  border-collapse:collapse;
-  border:0px solid #aaa;
-  width:100%;
-  line-height: 1.7;
+	margin-top: 15px;
+	border-collapse: collapse;
+	border: 0px solid #aaa;
+	width: 100%;
+	line-height: 1.7;
 }
+
 table.dataintable th {
-  vertical-align:baseline;
-  padding:5px 15px 5px 6px;
-  background-color:#3F3F3F;
-  border:0px solid #3F3F3F;
-  color:#fff;
+	vertical-align: baseline;
+	padding: 5px 15px 5px 6px;
+	background-color: #3F3F3F;
+	border: 0px solid #3F3F3F;
+	color: #fff;
 }
+
 table.dataintable td {
-  vertical-align:text-top;
-  padding:6px 15px 6px 6px;
-  border:0px solid #aaa;
-  text-align:left;
+	vertical-align: text-top;
+	padding: 6px 15px 6px 6px;
+	border: 0px solid #aaa;
+	text-align: left;
 }
+
 table.dataintable tr:nth-child(odd) {
-  background-color:#F5F5F5;
+	background-color: #F5F5F5;
 }
+
 table.dataintable tr:nth-child(even) {
-  background-color:#fff;
+	background-color: #fff;
 }
 
 
@@ -800,7 +805,7 @@ nav#style1 {
 	width: 100%;
 	height: 60px;
 	display: flex;
-/*	 background-color: black; */
+	/*	 background-color: black; */
 }
 
 ul#outer_list {
@@ -894,7 +899,7 @@ a#style6 {
 	display: inline-block;
 	padding: 10px 20px;
 	width: 120px;
-/*	background-color: #4CAF50;*/
+	/*	background-color: #4CAF50;*/
 	background-color: #bdbcbb;
 	color: white;
 	text-decoration: none;
@@ -984,3 +989,43 @@ img#page1 {
 	border-radius: 18px;
 }
 
+#sponsors {
+	margin-top: 20px;
+	/* 确保标题与顶部的距离 */
+	text-align: center;
+	/* 标题居中 */
+}
+
+.sponsors-container {
+	display: flex;
+	flex-wrap: wrap;
+	/* 允许换行 */
+	justify-content: center;
+	/* 图片居中显示 */
+	margin-top: 20px;
+	/* 确保与标题的距离 */
+}
+
+.sponsor-img {
+	max-height: 64px;
+	width: auto;
+	height: auto;
+	margin: 10px;
+	/* 统一设置间距 */
+}
+
+@media (max-width: 768px) {
+
+	/* 针对手机和小屏幕 */
+	.sponsors-container {
+		justify-content: center;
+		/* 居中显示 */
+	}
+
+	.sponsor-img {
+		max-height: 50px;
+		/* 根据需要调整尺寸 */
+		margin: 5px;
+		/* 减小间距 */
+	}
+}
