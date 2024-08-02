@@ -245,17 +245,18 @@
             <p>
             <ul>
                 <li>Only use the provided pre-trained weights for adaptation. In order to align the backbone capacity across submissions, <b>DO NOT</b> increase the backbone model size or use other backbone networks.</li>
-                <li><b>DO NOT</b> use keypoint ground-truth of validation and test sets from AssemblyHands in any ways, including re-training and camera parameter estimation.</li>
+                <li><b>DO NOT</b> use keypoint ground-truth of validation and test sets from AssemblyHands in any ways, e.g., re-training</li>
                 <li><b>DO NOT</b> use annotated camera extrinsics from AssemblyHands in any ways, including selecting training samples with extrinsics.</li>
                 <li><b>DO NOT</b> use the validation set for training or fine-tuning.</li>
-                <li><b>DO NOT</b> use any other data and annotations from Assembly101.</li>
-                <li>It is permitted to use hand mesh models (e.g., MANO).</li>
+                <li><b>DO NOT</b> use any other data and annotations from Assembly101.</li>                
                 <li>Participants only allow the use of two-view images during adaptation. </li>
                 <li>We reserve the right to determine if a method is valid and eligible for awards.</li>
             </ul>
             </p>
           <p><b>Metric: </b> We use wrist-relative MPJPE for each dual-camera pair.</p>
+          <p><b>Submission: </b>: Please follow this submission instructions: <a ref="https://github.com/ut-vision/ECCV2024-AssemblyHands-S2D">[ECCV2024-AssemblyHands-S2D]</a>. You can find test images and metadata, and an example of a submission file. Please compress your prediction json into a zip file and upload it to the submission server: <a herf="https://codalab.lisn.upsaclay.fr/competitions/19885">[CodaLab]</a>. Our baseline result after adaptation is listed as the name "LRC". 
           <p><b>Update Notes: </b><br>
+            (Aug 2): We updated the eval server and submission code.<br>
             (July 4): We're constructing the dataset and evaluation server tailored for this challenge. Check the S2DHand project for the reference of this task.
         </p> 
         <p>
@@ -267,8 +268,8 @@
 
             <h4 align="center">Check out the following links to get started</h4>
             <h4 align="center">S2DHand project page: <a href="https://github.com/ut-vision/S2DHand"><b>https://github.com/ut-vision/S2DHand</b></a></h4>
-            <h4 align="center">Code for this challenge: <a href="TBD"><b>TBD</b></a></h4>
-            <h4 align="center">Leaderboard: <a href="TBD"><b>TBD</b></a></h4>
+            <h4 align="center">Submission code: <a href="https://github.com/ut-vision/ECCV2024-AssemblyHands-S2D"><b>https://github.com/ut-vision/ECCV2024-AssemblyHands-S2D</b></a></h4>
+            <h4 align="center">Leaderboard: <a href="https://codalab.lisn.upsaclay.fr/competitions/19885"><b>https://codalab.lisn.upsaclay.fr/competitions/19885</b></a></h4>
             <h4 align="center">AssemblyHands dataset: <a href="https://assemblyhands.github.io/"><b>https://assemblyhands.github.io/</b></a></h4>
   
         </div>
