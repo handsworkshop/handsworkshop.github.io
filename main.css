@@ -529,6 +529,7 @@ table.dataintable td {
 	padding: 6px 15px 6px 6px;
 	border: 0px solid #aaa;
 	text-align: left;
+	width:15px;
 }
 
 table.dataintable tr:nth-child(odd) {
