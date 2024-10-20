@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta name="keywords" content="hands,ICCV 2023,workshop,pose estimation">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!--- <title></title> --->
+  <title>HANDS Workshop</title>
+
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="header-container">
+      <div id="header">
+        <div id="header-icon-text-container">
+          <div id="header-text-container">
+            <nav class="style1">
+              <ul id="outer_list">
+                <li id="outer_li_year"><a id="current_year" href="#">2022<span id="arrow"></span></a>
+
+                  <ul id="top_list">
+
+                    <li id="style2"><a id="style3" href="workshop2024.html">2024</a></li>
+                    <li id="style2"><a id="style3" href="workshop2023.html">2023</a></li>
+                    <li id="style2"><a id="style3" href="workshop2022.html">2022</a></li>
+                    <li id="style2"><a id="style3" href="https://sites.google.com/view/hands2019/home">2019</a>
+                    <li id="style2"><a id="style3" href="https://sites.google.com/view/hands2018">2018</a>
+                    <li id="style2"><a id="style3" href="">2017</a>
+                    <li id="style2"><a id="style3" href="https://labicvl.github.io/hand/Hands2016/#home">2016</a>
+                    <li id="style2"><a id="style3" href="">2015</a>
+                  </ul>
+                </li>
+
+                <li id="outer_li"><a id="workshop_link" href="#">Workshop</a>
+                </li>
+
+                <li id="outer_li"><a id="challenge_link" href="#">Challenge</a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div id="layout-content">
+        <div id="text-img-container">
+          <div id="img-container">
+            <a href="https://hands-workshop.org/"><img src="logos/hands.png" alt="HANDS" width="100%" /></a>
+          </div>
+          <div id="text-container"></div>
+        </div>
+        <p>
+        <div id="beamer">
+
+
+          <beam>
+            Observing and Understanding <b>Hands</b> in Action
+          </beam></br>
+          <beams>
+            in conjunction with ECCV 2022</br>
+          </beams>
+
+
+
+        </div>
+
+        <br>
+        <div id="menu-container">
+          <div id="menu-item"><a id="style6" href="#overview">Overview</a></div>
+          <div id="menu-item" style="width:200px ;"><a id="style6" style="width:160px ;" href="#challenge1">Task1</a></div>
+          <div id="menu-item" style="width:200px ;"><a id="style6" style="width:160px ;" href="#challenge2">Task2</a></div>
+          <div id="menu-item"><a id="style6" href="#contact">Contact</a></div>
+        </div>
+        <br>
+        </p>
+        <h1 id="overview">Overview</h1>
+        <p>
+          We present the HANDS22 Challenge, a public competition designed for the evaluation of the tasks of 3D hand and
+          object
+          pose estimation during interaction. Hand-hand and hand-object are the most common forms of interactions using
+          human
+          hands and understanding the 3D poses of hands and objects is critical to building AR/VR systems or robotic
+          applications.
+          We introduce two separate tasks for these scenarios and evaluate the performance of the participating methods.
+          Winners
+          of the tasks and prizes will be announced and awarded during the workshop and results will be disseminated in
+          a
+          subsequent challenge publication.
+
+        </p>
+        <p>
+          Our first task focuses on hand-held object pose estimation. While several methods have been developed for
+          estimating
+          object poses, very few works have focused on hand-held object pose estimation using the hand context. To
+          encourage
+          further research in this direction, we introduce <b>Task 1: Hand-held Object Pose Estimation</b> using HO-3D
+          dataset, which
+          contains 3D pose annotations of hand and object. In this task, the participants are required to estimate the
+          pose of the
+          hand-held object from an RGB image and are encouraged to utilize the provided (both train and test set)
+          ground-truth 3D
+          poses of the hand.
+
+        </p>
+        <p>
+          Our second task is aimed at two-hands pose estimation during hand-hand and hand-object interactions. Many hand
+          pose
+          estimation methods rely on 3D pose annotations for training which are difficult to obtain especially during
+          interactions, thus limiting their application in real-world scenarios. To address this shortcoming we
+          introduce, <b>Task 2:
+            Semi/Self-supervised Two-hands 3D Pose Estimation during Hand-object and Hand-hand interactions</b> using
+          the recently
+          introduced Assembly101 dataset. The dataset provides mutli-view captured videos of hand-object interaction
+          during
+          assembling and disassembling of toy-vehicles without pose annotations. The accuracy of the participating
+          methods is
+          evaluated on a manually-annotated test set.
+
+        </p>
+
+        <h4 align="center">Winners and prizes will be announced and awarded during the workshop.</h4>
+        <h4 align="center">Please visit the challenge pages for more details.</h4>
+
+
+
+        <br>
+
+        <h2>General Rules and Participation</h2>
+        <p>We follow the rules of previous challenges and more details can be found in the challenge page.
+        </p>
+        <ul>
+          <li>
+            <p>
+              Submission deadline: <del>Oct. 10. 2022</del> Oct. 15. 2022.
+            </p>
+          </li>
+          <li>
+            <p>To participate and download the dataset please fill the <b><a
+                  href="To participate and download the dataset please fil">form</a></b>
+              (closed) and accept the terms and conditions.</p>
+          </li>
+          <li>
+            <p>
+              Submissions are processed through CodaLab (register using the same email id provided in the above form):
+            <ul style="margin-top: 0.3em;">
+              <li>
+                <b><a
+                    href="https://www.google.com/url?q=https%3A%2F%2Fcodalab.lisn.upsaclay.fr%2Fcompetitions%2F6290%3Fsecret_key%3D06faea85-2a80-46df-9e2e-5105a7eb7d9f&sa=D&sntz=1&usg=AOvVaw2ndWoa9iR-NycaaABaUpCS">Task1</a></b>
+              </li>
+              <li>
+                <b><a
+                    href="https://www.google.com/url?q=https%3A%2F%2Fcodalab.lisn.upsaclay.fr%2Fcompetitions%2F6979&sa=D&sntz=1&usg=AOvVaw3ZDy277ybhdoo9xgC-PI9o">Task2</a></b>
+              </li>
+            </ul>
+            </p>
+          </li>
+          <li>
+            <p>Each team <b>must</b> register under only one user id/email id. Teams found to be registered under
+              multiple IDs will be disqualified.
+            </p>
+          </li>
+          <li>
+            <p>In order for participants to be eligible for competition prizes and be included in the official rankings
+              (to be
+              presented during the workshop and subsequent publications), information about their submission must be
+              provided to
+              organizers. Information may include, but not limited to, details on their method, synthetic and real data
+              use,
+              architecture and training details. Check <a
+                href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Fhands2019%2Fchallenge%3Fauthuser%3D0%23h.p_4755nnFE5y7c&sa=D&sntz=1&usg=AOvVaw3bYxPYZKAfPlHln9lmWQ2b">previous
+                challenge</a> publication to have an idea of the information needed.</p>
+          </li>
+          <li>
+            <p>Winning methods may be asked to provide their source code to reproduce their results under strict
+              confidentiality rules if requested by organizers/other participants.</p>
+          </li>
+          <li>
+            <p>For each submission, participants must keep the parameters of their method constant across all testing
+              data for a given task.</p>
+          </li>
+
+        </ul>
+        </li>
+
+        </ul>
+
+
+
+
+
+        <br>
+
+        <h1 id="challenge1">Task 1 - Hand-held Object Pose Estimation</h1>
+
+        <h2>Overview</h2>
+        <p>
+          The goal of this task is to estimate the pose of <b>hand-held objects</b> from a single RGB image. Hand-held
+          object pose
+          estimation has several applications in robotics and augmented reality. Acquiring accurate pose of objects can
+          be a
+          crucial step during handovers in human-robot interaction, or in the metaverse applications that aim to blur
+          the
+          boundaries between the real and the virtual worlds. Many previous methods for object pose estimation have
+          focused on
+          acquiring 6D pose of known-objects (3D object models available) in non-interactive scenarios [1,2]. In
+          interactive
+          scenarios, such as hand-object interactions, the manipulator (hand) provides an important cue/prior about the
+          pose of
+          the manipulated object and can be utilized to improve the accuracy of the estimated object pose [3].
+
+        <p>
+          In this challenge, we refactor the HO-3D dataset to create a new train/test split and provide the hand and
+          object 3D
+          poses for the train split, and only the hand poses for the test split. The participants are required to
+          estimate the
+          object pose from the RGB image in the test split and are encouraged to utilize the ground-truth hand poses.
+          The
+          participants are also free to estimate the hand poses themselves. The submissions are evaluated on CodaLab
+          server.
+        </p>
+        </p>
+
+        <h2>Dataset Details</h2>
+        <p>The train/test split contains 10 objects from the YCB dataset [4] which were originally used in the HO-3D
+          dataset. The train set contains 79,889 images and test set contains 19,852 images. Note that the object
+          translation is defined relative to the root joint (wrist) of the hand and not the camera optic centre.</p>
+
+        <p>The following annotations are provided in the <b>train</b> split:</p>
+
+        <ul>
+          <li>Object Pose (translation relative to hand wrist joint)</li>
+          <li>Object name</li>
+          <li>Object corner locations in the image</li>
+          <li>MANO hand pose parameters</li>
+          <li>MANO hand shape parameters</li>
+          <li>Hand 3D joint locations</li>
+          <li>Hand 2D joint locations in the image</li>
+          <li>Hand-object segmentation map</li>
+        </ul>
+        <p>The following information is provided for <b>test</b> split:</p>
+        <ul>
+          <li>MANO hand pose parameters</li>
+          <li>MANO hand shape parameters</li>
+          <li>Hand 3D joint locations</li>
+          <li>Hand 2D joint locations in the image </li>
+        </ul>
+
+        <h2>Rules of Participation</h2>
+        <ul>
+          <li>The participants are not allowed to use the original HO-3D train/test split as the test split for this
+            challenge overlaps with the train split of original HO-3D. The train/test split for this challenge has been
+            carefully chosen to detect such violations and the violators will be immediately disqualified.</li>
+          <li>Use of other labeled datasets (either real or synthetic) is not allowed.</li>
+          <li>Use of rendered images using the provided hand-object poses is allowed.</li>
+          <li>Use of external unlabelled data is allowed (self-supervised and unsupervised methods).</li>
+        </ul>
+
+        <h2>Evaluation</h2>
+        <p>The accuracy of the methods will be evaluated based on the standard metric, Mean Symmetry-aware Surface
+          Distance (MSSD) [5], which also considers the symmetricity of objects. Due to severe occlusion of the object
+          by the hand, distinctive features on the object may not be visible leading to ambiguous poses. The MSSD metric
+          is defined as,</p>
+        <p align="center" style="margin: 10; padding: 10;">
+          <img src="./profiles/2022/task1_1.png" alt="Image" width="50%" style="display: block; margin: 0 auto;" />
+        </p>
+        <p>
+          where <b><span>S</span><span style="text-transform: lowercase;">M</span></b> is a set of global symmetry
+          transformations, <b><span>V</span><span style="text-transform: lowercase;">M</span></b> is a set of mesh
+          vertices of object model M, \hat{P} is the
+          ground-truth pose and P is the estimated pose. The global angle of symmetry for each of the 10 objects is
+          given in the
+          table below.
+        </p>
+        <p align="center" style="margin: 10; padding: 10;">
+          <img src="./profiles/2022/task1_2.png" alt="Image" width="80%" style="display: block; margin: 0 auto;" />
+        </p>
+
+        <h2>Submission Format</h2>
+        <p>
+          Estimated object rotation and translation relative to hand root joint should be dumped in a json file. Please
+          refer to
+          challenge_submit.py script in <a
+            href="https://github.com/shreyashampali/HANDS2022_Obj_Pose">https://github.com/shreyashampali/HANDS2022_Obj_Pose</a>
+          for the submission format. The json
+          files should be compressed into to .zip file before submission.
+        </p>
+
+        <h2>General comments</h2>
+        <ul>
+
+          <li>Ordering of the joints: Please refer to 'skeleton.txt' in dataset folder for ordering of the joints.</li>
+          <li>The images in this dataset are cropped images of the original HO-3D dataset. The object translation needs
+            to be estimated relative to the root joint of the hand.</li>
+          <li>Coordinate system: All annotations assume opencv coordinate system i.e., positive x-axis to the right,
+            positive y-axis downwards and positive z-axis into the scene.</li>
+        </ul>
+
+        <h2>Links</h2>
+        <p><b>Dataset Download Link:</b> Please fill the <b>form</b>(closed) to get the download link</p>
+        <p><b>Github Page:</b> <a
+            href="https://github.com/shreyashampali/HANDS2022_Obj_Pose">https://github.com/shreyashampali/HANDS2022_Obj_Pose</a>
+          (contains visualization, submission, and evaluation scripts)</p>
+        <p><b>HANDS2022 Website:</b> <a
+            href="https://sites.google.com/view/hands2022/call-for-extended-abstract?authuser=0">https://sites.google.com/view/hands2022/call-for-extended-abstract?authuser=00</a>
+        </p>
+        <br>
+
+        <h2 style="text-align: left;color:grey;"> <u>References</u></h2>
+
+        <p>[1] Mahdi Rad and Vincent Lepetit. “BB8: A Scalable, Accurate, Robust to Partial Occlusion Method for
+          Predicting the 3D Poses of Challenging Objects without Using Depth”, In Proc. IEEE Int'l Conf. on Computer
+          Vision (ICCV), 2017.</p>
+        <p>[2] Wadim Kehl, Fabian Manhardt, Federico Tombari, Slobodan Ilic, Nassir Navab. “ SSD-6D: Making RGB-Based 3D
+          Detection and 6D Pose Estimation Great Again”, ICCV 2017.</p>
+        <p>[3] Yufei Ye, Abhinav Gupta, Shubham Tulsiani. “What's in your hands?3D Reconstruction of Generic Objects in
+          Hands”, CVPR 2022.</p>
+        <p>[4] Yu Xiang, Tanner Schmidt, Venkatraman Narayanan, and Dieter Fox. “PoseCNN: A Convolutional Neural Network
+          for 6D Object Pose Estimation in Cluttered Scenes”. Science, 2018.</p>
+        <p>[5] Tomas Hodan, Martin Sundermeyer, Bertram Drost, Yann Labbe, Eric Brachmann, Frank Michel, Carsten Rother,
+          and Jiri Matas. “BOP Challenge 2020 on 6D Object Localization”. In Computer Vision - ECCV 2020 Workshops -
+          Glasgow, UK, 2020.</p>
+
+
+
+
+
+
+        <br>
+
+        <h1 id="challenge2">Task 2: Semi/Self-supervised Two-hands 3D Pose Estimation during Hand-object and Hand-hand
+          interactions</h1>
+
+        <h2>Overview</h2>
+
+
+        <p>
+          Assembly101 is a new procedural activity dataset featuring 4321 videos of people assembling and disassembling
+          101
+          "take-apart" toy vehicles. Participants work without fixed instructions, and the sequences feature rich and
+          natural
+          variations in action ordering, mistakes, and corrections. Assembly101 is the first multi-view action dataset,
+          with
+          simultaneous static (8) and egocentric (4) recordings. The official website is <a
+            href="https://assembly-101.github.io">https://assembly-101.github.io</a>.
+        </p>
+
+
+        <center>
+          <iframe srcdoc='
+            <video width="100%" height="auto" style="aspect-ratio:16/9;" autoplay muted loop playsinline>
+                <source src="https://assembly-101.github.io/assets/12_view_assembly.mp4" type="video/mp4">
+            </video>' width="90%" height="auto" style="display: block;aspect-ratio:16/9;" frameborder="0"
+            scrolling="no" allowfullscreen>
+          </iframe>
+        </center>
+
+
+
+        <h2>Instructions</h2>
+        <p>
+        <p>
+          Based on Assembly101, this challenge will emphasize reduced ground truth labels and focus on topics such as
+          semi-supervised or self-supervised learning for training hand pose estimation systems. We target two-hand 3D
+          pose
+          estimation. For evaluation, we will use end point error and PCK curve taking annotation confidence into
+          account.
+        </p>
+        <p>
+          <b>Specifically, we will provide</b>
+        </p>
+        <ul>
+          <li>
+            Multi-view hand object interaction videos without 3D hand pose annotation
+          </li>
+          <li>
+            Camera intrinsic & extrinsic matrix for simultaneous static (8) and egocentric (4) recordings
+          </li>
+          <li>
+            A validation multiview video with human annotated 3D & 2D labels (can not be used for training)
+          </li>
+          <li>
+            An evaluation multiview video without labels for testing
+          </li>
+        </ul>
+        </p>
+
+
+
+        <h2>Rules</h2>
+        <p>
+          <b>For a fair comparison, we only allow to use below information </b>
+        <ul>
+          <li>Arbitrary method to get hand bounding box or hand segmentation (we provided one in the dataset)
+          </li>
+          <li>OpenPose to provide predicted 2D poses</li>
+          <li>
+            You can choose either static RGB videos or egocentric videos for semi-/self-supervised training
+          </li>
+          <li>Arbitrary synthetic data (e.g., synthetic dataset like RHD or self synthetic data like ObMan)</li>
+          <li>HO-3D dataset in our HANDS22 Challenge (other real-world datasets are not allowed)</li>
+          <li>Hand models (e.g., MANO)</li>
+          <li>The validation/evaluation sets can not be used for training or fine-tuning</li>
+
+        </ul>
+        If you would like to use other information for training, please feel free to contact us to check if they are
+        feasible for this challenge.
+        </p>
+
+        <h2>Submisson Format</h2>
+        <p>
+          The results are evaluated using the CodaLab server: <a
+            href="https://codalab.lisn.upsaclay.fr/competitions/6979">https://codalab.lisn.upsaclay.fr/competitions/6979</a>.
+        </p>
+        <p>
+          Estimated hand poses of each video should be dumped in a json file. Please refer to <I>challenge_submit.py</I>
+          script in <a
+            href="https://github.com/bestonebyone/HANDS2022_Assembly101">https://github.com/bestonebyone/HANDS2022_Assembly101</a>
+          for the submission format. The json files should be compressed into to .zip file before submission.
+        </p>
+
+        <h2>Visualisation</h2>
+        <p>Please refer to <I>validation_vis.py</I> script in <a
+            href="https://github.com/bestonebyone/HANDS2022_Assembly101">https://github.com/bestonebyone/HANDS2022_Assembly101</a>
+          for the validation visualisation. </p>
+
+        <h2>Ordering of the joints</h2>
+        <p>For each frame, the prediction (42x3) should follow 0-20 for right hand and 21-41 for left hand. 0-3: right
+          thumb [tip to mcp], 4-7: right index, 8-11 right middle finger, 12-15 right ring finger, 16-19 right pinky
+          finger, 20: right wrist, 21-24: left thumb, 25-28: left index, ..., 41: left wrist. Please check the
+          annotation from the validation set for more information.</p>
+
+
+        <h2>Acknowledgement:</h2>
+        <p>
+          Thanks to <a
+            href="https://www.google.com/url?q=https%3A%2F%2Fassembly-101.github.io&sa=D&sntz=1&usg=AOvVaw2HC4rURzQZ4MAO6xxQ8XW2">the
+            Assembly101 team</a>, for providing Assembly101 for our challenge and special thanks to <a
+            href="https://www.google.com/url?q=https%3A%2F%2Fkunhe.github.io&sa=D&sntz=1&usg=AOvVaw0gcOVfSXyHZZSKGtPCpeKn">Dr.
+            Kun He</a> for the
+          annotations of the dataset.
+        </p>
+
+
+
+
+        <h1 id="contact">Contact</h1>
+
+        <p>hands2022@googlegroups.com</p>
+
+
+        <div id="footer">
+          <p style="align-items: center;text-align: center;">
+
+            <a href="https://youtube.com/@handsworkshop" target="_Blank">
+              <img id="page1" alt="" src="profiles/youtube.jpg">
+            </a>
+            <a href="https://github.com/handsworkshop" target="_Blank">
+              <img id="page" alt="" src="profiles/github.png">
+            </a>
+          </p>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <script>
+      var isYearUpdated = false; // 标志，默认未更新年份
+
+      document.getElementById('outer_li_year').addEventListener('click', function (event) {
+        event.preventDefault(); // 阻止默认链接行为
+        // 获取第一个<li>标签中的年份
+        var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+        if (year > '2020') {
+          // 构建新的href
+          var newHref = 'workshop' + year + '.html';
+          // 跳转到新的页面
+          window.location.href = newHref;
+        }
+
+      });
+
+      document.getElementById('workshop_link').addEventListener('click', function (event) {
+        event.preventDefault(); // 阻止默认链接行为
+        if (!isYearUpdated) {
+          var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+          var newHref = 'workshop' + year + '.html';
+          window.location.href = newHref;
+        }
+      });
+
+      document.getElementById('challenge_link').addEventListener('click', function (event) {
+        event.preventDefault(); // 阻止默认链接行为
+        if (!isYearUpdated) {
+          var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+          var newHref = 'challenge' + year + '.html';
+          window.location.href = newHref;
+        }
+      });
+
+      // 获取所有带有id="style3"的a标签
+      var yearLinks = document.querySelectorAll('#style3');
+
+      yearLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          // 获取点击的年份
+          var selectedYear = this.textContent.trim();
+          if (selectedYear < '2020') {
+            isYearUpdated = true;
+            document.getElementById('current_year').textContent = selectedYear;
+            // 设置标志为已更新年份
+
+            window.location.href = link.href; // 确保使用 href 进行跳转
+          } else {
+            event.preventDefault(); // 阻止默认链接行为
+            document.getElementById('current_year').textContent = selectedYear;
+
+            // 设置标志为已更新年份
+            isYearUpdated = true;
+
+
+            // 关闭下拉菜单（如果需要）
+            // document.getElementById('top_list').style.display = 'none';
+
+            // 可选：添加其他逻辑
+          }
+
+        });
+      });
+
+      var workshopLi = document.querySelector('#challenge_link');
+      workshopLi.classList.add('highlight');
+
+    </script>
+
+
+</body>
+
+</html>

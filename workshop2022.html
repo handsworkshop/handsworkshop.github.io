@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta name="keywords" content="hands,ICCV 2023,workshop,pose estimation">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <title>HANDS Workshop</title>
+
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="header-container">
+      <div id="header">
+        <div id="header-icon-text-container">
+          <div id="header-text-container">
+            <nav class="style1">
+              <ul id="outer_list">
+                <li id="outer_li_year"><a id="current_year" href="#">2022<span id="arrow"></span></a>
+
+                  <ul id="top_list">
+
+                    <li id="style2"><a id="style3" href="workshop2024.html">2024</a></li>
+                    <li id="style2"><a id="style3" href="workshop2023.html">2023</a></li>
+                    <li id="style2"><a id="style3" href="workshop2022.html">2022</a></li>
+                    <li id="style2"><a id="style3" href="https://sites.google.com/view/hands2019/home">2019</a>
+                    <li id="style2"><a id="style3" href="https://sites.google.com/view/hands2018">2018</a>
+                    <li id="style2"><a id="style3" href="">2017</a>
+                    <li id="style2"><a id="style3" href="https://labicvl.github.io/hand/Hands2016/#home">2016</a>
+                    <li id="style2"><a id="style3" href="">2015</a>
+                      <!-- <li id="style2"><a id="style3" href="workshop2022">2022</a></li> -->
+                  </ul>
+                </li>
+
+                <li id="outer_li"><a id="workshop_link" href="#">Workshop</a>
+                </li>
+
+                <li id="outer_li"><a id="challenge_link" href="#">Challenge</a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div id="layout-content">
+        <div id="text-img-container">
+          <div id="img-container">
+            <a href="https://hands-workshop.org/"><img width="100%" alt="HANDS" src="logos/hands.png"></a>
+          </div>
+          <div id="text-container"></div>
+        </div>
+        <p>
+        <div id="beamer">
+
+          <beam>
+            Observing and Understanding <b>Hands</b> in Action
+          </beam></br>
+          <beams>
+            in conjunction with ECCV 2022</br>
+          </beams>
+
+        </div>
+
+        <br>
+
+        <div id="menu-container">
+          <div id="menu-item"><a id="style6" href="#overview">Overview</a></div>
+          <div id="menu-item"><a id="style6" href="#schedule">Schedule</a></div>
+          <div id="menu-item"><a id="style6" href="#papers">Papers</a></div>
+          <div id="menu-item"><a id="style6" href="#speakers">Speakers</a></div>
+          <div id="menu-item"><a id="style6" href="#organizers">Organizers</a></div>
+          <!-- <div id="menu-item"><a id="style6" href="#chal-committee">Chal-committee</a></div> -->
+          <div id="menu-item"><a id="style6" href="#sponsors">Sponsors</a></div>
+          <div id="menu-item"><a id="style6" href="#contact">Contact</a></div>
+
+        </div>
+        <br>
+        <br>
+        <p style="align-items: center;text-align: center; font-size:20px;">
+          <b>This page is a rebuild of the original page, which can be found <a target="_blank"
+              href="https://sites.google.com/view/hands2022/home">here</a></b><br>
+
+        </p>
+        <h1 id="overview">Overview </h1>
+
+
+        <font size="5">
+          Welcome to join our ECCV 2022 Workshop!
+        </font>
+        </br>
+        </br>
+
+        <p>
+          The sixth edition of this ECCV2022 workshop aims at gathering researchers who work on 2D/3D hand detection,
+          segmentation, pose estimation, and tracking problems and its applications. This edition will emphasize
+          <b>reduced ground
+            truth labels</b> and focus on topics such as <b>semi-supervised or self-supervised learning for training
+            hand pose estimation
+            systems</b>. Development of RGB-D sensors and camera miniaturization (wearable cameras, smart phones,
+          ubiquitous computing)
+          have opened the door to a whole new range of technologies and applications which require detecting hands and
+          recognizing
+          hand poses in a variety of scenarios, including AR/VR, assisted car driving, robot grasping, and health care.
+          However,
+          labelling accurate real-world hand poses is still non-trivial. Most existing hand pose methods fail to
+          generalize well
+          to the real world scenarios, especially when considering <b>hand-object or hand-hand interaction
+            scenarios</b>. As new
+          multiview video benchmarks have been proposed for the hand-object or hand-hand interaction, our goal is to
+          encourage
+          semi-/self-supervised learning for hand poses to utilize spatial-temporal information and reduce reliance on
+          annotations. We will also cover up a “breadth of application” including sign language recognition, desktop
+          interaction,
+          egocentric views, object manipulations, far range and over-the-shoulder driver footage. The relevant topics
+          include:
+        </p>
+
+
+        <h2>Topics</h2>
+
+
+        We will cover all hand-related topics. The relevant topics include and not limited to:
+
+        <ul id="topicstyle1">
+          <li id="topicstyle2">2D/3D hand pose estimation</li>
+          <li id="topicstyle2">Semi-/self-/weakly-supervised pose estimation </li>
+          <li id="topicstyle2">Hand-object/hand interaction</li>
+          <li id="topicstyle2">Robot grasping and object manipulation</li>
+          <li id="topicstyle2">Imitation learning, reinforcement learning</li>
+          <li id="topicstyle2">Hand detection/segmentation</li>
+          <li id="topicstyle2">Gesture recognition/interfaces</li>
+          <li id="topicstyle2">3D articulated hand tracking</li>
+          <li id="topicstyle2">Hand modelling and rendering</li>
+          <li id="topicstyle2">Hand activity recognition</li>
+          <li id="topicstyle2">Egocentric vision systems</li>
+          <li id="topicstyle2">Structured prediction, regression, and other relevant theories/algorithms</li>
+          <li id="topicstyle2">Applications of hand pose estimation in AR/VR/robotics/haptics</li>
+          <li id="topicstyle2">Driver hand activity analysis</li>
+        </ul>
+
+
+
+        <h1 id="schedule">Schedule(Israel Time)</h1>
+        <p style="align-items: center;text-align: center;"><b>Sunday afternoon (2:00 pm - 6:00 pm), Oct. 23.
+            2022</b></br>
+          <b>Grand Ballroom E, David
+            Intercontinental, Tel Aviv</b></br>
+        </p>
+
+
+
+        <table class="dataintable">
+          <tbody>
+            <tr>
+              <td><b>14:20 - 14:30</b></td>
+              <td>Introduction/opening remarks</td>
+            </tr>
+            <tr>
+              <td><b>14:30 - 15:00</b></td>
+              <td> Invited Talk: Robert Wang</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td> <b>Title:</b> Hands for AR/VR
+              </td>
+            </tr>
+            <tr>
+              <td><b>15:00 - 15:30</b></td>
+              <td> Invited Talk: Hyung Jin Chang </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td> <b>Title:</b> Understanding Hand-Object Interactions in 3D with Graph-based Network
+              </td>
+            </tr>
+
+            <tr>
+              <td> <b>15:30 - 15:34</b></td>
+              <td> Challenge results</td>
+            </tr>
+
+
+            <tr>
+              <td> <b>15:34 - 15:42</b></td>
+              <td> Technical report: Cunlin Wu</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td> <b>Title:</b> How to lift multi-view 2D hand pose to 3D counterpart? A closed form solution
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>15:42 - 15:50</b></td>
+              <td> Technical report: Xiaozheng Zheng </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td> <b>Title:</b> Multiview-Consistent Self-Supervised Learning for Hand Pose Reconstruction
+
+              </td>
+            </tr>
+
+
+
+            <tr>
+              <td><b>15:50 - 16:50</b></td>
+              <td> Coffee break & Paper (poster) presentations </td>
+            </tr>
+
+            <tr>
+              <td><b>16:50 - 17:20</b></td>
+              <td> Invited speaker: Yu-Wei Chao </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td> <b>Title:</b> Human-Robot Handover: From Real to Sim</br>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>17:20 - 17:50</b></td>
+              <td> Invited speaker: Dimitrios Tzionas </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td> <b>Title:</b> Towards Human Avatars in Interaction with Objects</br>
+              </td>
+            </tr>
+
+            <tr>
+              <td> <b>17:50 - 18:00</b></td>
+              <td> Conclusion & prizes</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <h1 id="papers">Accepted Papers & Extended Abstracts</h1>
+
+        <!-- list papers in the form of:
+OakInk2 : A Dataset for Long-Horizon Hand-Object Interaction and Complex Manipulation Task Completion.
+Xinyu Zhan*, Lixin Yang*, Kangrui Mao, Hanlin Xu, Yifei Zhao, Zenan Lin, Kailin Li, Cewu Lu.
+[pdf] -->
+        <p>We are delighted to announce the following accepted papers and extended abstracts will appear in the
+          workshop! All Extended abstracts and invited posters should prepare posters for communication during the
+          workshop.</p> </br>
+
+        <p> <b>Poster size: the posters should be portrait (vertical), with a maximum size of 90x180 cm.</b></p>
+
+        <!-- <ul> -->
+        <h2>Accepted Extended Abstracts</h2>
+        <ul>
+          <li> Background Mixup Data Augmentation for Hand and Object-in-Contact Detection. <br>
+            <i> Koya Tango, Takehiko Ohkawa, Ryosuke Furuta, Yoichi Sato.</i> <br>
+            <!-- [pdf] -->
+          </li>
+          <a href="https://drive.google.com/file/d/1KBq2VZvg8hONQpHchA688O4bg5SXPnJl/view?usp=sharing">[pdf]</a>
+          <a href="https://drive.google.com/file/d/1tMYJm5AZhOJOKk0BMiWP0JrTeBPDmZ8k/view?usp=sharing">[supp]</a>
+        </ul>
+        <ul>
+          <li> Scalable High-fidelity 3D Hand Shape Reconstruction via Graph Frequency Decomposition.<br>
+            <i> Tianyu Luan, Jingjing Meng, Junsong Yuan.</i> <br>
+            <!-- [pdf] -->
+            <a href="https://drive.google.com/file/d/1JExKfdkt4NaJ7PHS-5Pg1LbXuYyEJd08/view?usp=sharing">[pdf]</a>
+          </li>
+        </ul>
+        <ul>
+          <li> MC-hands-1M: A glove-wearing hand dataset for pose estimation. <br>
+            <i> Prodromos Boutis, Zisis Batzos, Konstantinos Konstantoudakis, Anastasios Dimou, Petros Daras.</i> <br>
+            <!-- [pdf] -->
+            <a href="https://drive.google.com/file/d/15-DVcH8ONeqjZJqq0TwF8l2UpZD0cGka/view?usp=sharing">[pdf]</a>
+            <a
+              href="https://www.google.com/url?q=https%3A%2F%2Farxiv.org%2Fabs%2F2210.10428&sa=D&sntz=1&usg=AOvVaw2jSnqjcsXb4L_wEgKjb0Bh">[arxiv]</a>
+          </li>
+        </ul>
+        <ul>
+          <li> Controllable Human Grasp Generation. <br>
+            <i> Lan Feng, Sammy Christen, Jie Song.</i> <br>
+            <!-- [pdf] -->
+            <a href="https://drive.google.com/file/d/1DHFcEgn2VDMKjzZaUS4BOGzlbENLMnNi/view?usp=sharing">[pdf]</a>
+            <a href="https://drive.google.com/file/d/1d7kLnhF__pOAM2G0u7Te0Q7pHAdnVWlv/view?usp=sharing">[poster]</a>
+          </li>
+        </ul>
+
+
+        <h2>Technical Reports</h2>
+        <ul>
+          <li> Multiview-Consistent Self-Supervised Learning for Hand Pose Reconstruction. <br>
+            <i> Xiaozheng Zheng, Chao Wen, Zhou Xue. </i> <br>
+            <!-- [pdf] -->
+            <a href="https://drive.google.com/file/d/1Iq-cIqY16EBMyWmmpnj4qPsZB8sFqu75/view?usp=sharing">[pdf]</a>
+          </li>
+        </ul>
+        <ul>
+          <li> How to Lift Multi-View 2D Hand Pose to 3D Counterpart: A Closed Form Solution. <br>
+            <i> Cunlin Wu, Yang Xiao, Changlong Jiang, Jinghong Zheng, Zhiguo Cao, Zhiwen Fang, Joey Tianyi Zhou, and
+              Junsong Yuan. </i> <br>
+            <!-- [pdf] -->
+            <a href="https://drive.google.com/file/d/1kgXx6b278YcardcZhnSnU9j2SJVOKAMf/view?usp=sharing">[pdf]</a>
+          </li>
+        </ul>
+
+
+
+
+        <h2>Invited Posters</h2>
+        <ul>
+          <li> S2Contact: Graph-based Network for 3D Hand-Object Contact Estimation with Semi-Supervised
+            Learning. <br>
+            <i> Tze Ho Elden Tse, Zhongqun Zhang, Kwang In Kim, Ales Leonardis, Feng Zheng, Hyung Jin Chang.</i> <br>
+            <!-- [pdf] -->
+          </li>
+        </ul>
+        <ul>
+          <li> AlignSDF: Pose-Aligned Signed Distance Fields for Hand-Object Reconstruction. <br>
+            <i> Zerui Chen, Yana Hasson, Cordelia Schmid, Ivan Laptev.</i> <br>
+            <!-- [pdf] -->
+
+          </li>
+        </ul>
+        <ul>
+          <li> Domain Adaptive Hand Keypoint and Pixel Localization in the Wild. <br>
+            <i> Takehiko Ohkawa, Yu-Jhe Li, Qichen Fu, Ryosuke Furuta, Kris M. Kitani, Yoichi Sato.</i> <br>
+            <!-- [pdf] -->
+
+          </li>
+        </ul>
+        <ul>
+          <li> PressureVision: Estimating Hand Pressure from a Single RGB Image.<br>
+            <i> Patrick Grady, Chengcheng Tang, Samarth Brahmbhatt, Christopher D. Twigg, Chengde Wan, James Hays,
+              Charles C. Kemp. </i> <br>
+            <!-- [pdf] -->
+
+          </li>
+        </ul>
+        <ul>
+          <li> Generative Adversarial Network for Future Hand Segmentation from Egocentric Video. <br>
+            <i> Wenqi Jia, Miao Liu, James M. Rehg.</i> <br>
+            <!-- [pdf] -->
+          </li>
+        </ul>
+
+        <ul>
+          <li> TransGrasp: Grasp Pose Estimation of a Category of Objects by Transferring Grasps from Only
+            One Labeled Instance. <br>
+            <i> Hongtao Wen*, Jianhang Yan*, Wanli Peng, Yi Sun.</i> <br>
+            <!-- [pdf] -->
+            <a
+              href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fyanjh97%2FTransGrasp%2Freleases%2Fdownload%2Fvideo-poster%2F4338-poster.pdf&sa=D&sntz=1&usg=AOvVaw1ggcVISkZKwaxqxzV3P8uy">[poster]</a>
+            <a href="https://youtu.be/gIftKDTnEW0">[video]</a>
+          </li>
+        </ul>
+
+
+
+        <h1 id="speakers">Invited Speakers</h1>
+
+
+        <div id="member-container" style="display:grid">
+
+
+
+
+          <div id="member" style="display:flex;width:100%;">
+
+            <img src="./profiles/2022/Prof.Dr.HyungJinChang.jpg" style="align-self:center;width:150px;height: 150px;">
+
+            <div style="text-align:left;margin-left:10px;margin-top:20px">
+              <b><a href="https://hyungjinchang.wordpress.com">Prof. Dr. Hyung Jin Chang</a></b>
+              is an Associate Professor of the School of Computer Science at the University of Birmingham and a Turing
+              Fellow of the
+              Alan Turing Institute. His research interests are focused on human-centred visual learning, especially in
+              application to
+              human-robot interaction. Computer vision and machine learning including deep learning are his expertise
+              research area.
+            </div>
+          </div>
+
+
+
+          <div id="member" style="display:flex;width:100%;">
+            <img src="./profiles/2022/Dr.Yu-Wei Chao.jpg" style="align-self:center;width:150px;height: 150px;">
+            <div style="text-align:left;margin-left:10px;margin-top:20px">
+              <b><a href="https://research.nvidia.com/person/yu-wei-chao">Dr. Yu-Wei Chao</a></b>
+              is a Senior Research Scientist at NVIDIA Seattle Robotics Lab. His research lies in the intersection of
+              computer vision,
+              machine learning, robotics, and simulation. His recent work focuses on human-robot interaction and robot
+              learning from
+              human in the context of object manipulation.
+            </div>
+          </div>
+
+
+          <div id="member" style="display:flex;width:100%;">
+            <img src="./profiles/2022/Prof.Dimitrios Tzionas.jpg" style="align-self:center;width:150px;height: 150px;">
+            <div style="text-align:left;margin-left:10px;margin-top:20px">
+              <b><a
+                  href="https://www.google.com/url?q=https%3A%2F%2Fimagine.enpc.fr%2F~varolg%2F&sa=D&sntz=1&usg=AOvVaw1J_f2NUrzLXoeDChSnjSBt">Prof.
+                  Dr. Dimitrios Tzionas</a></b>
+              is an Assistant Professor at the University of Amsterdam. Earlier he was a
+              Research
+              Scientist at the Perceiving Systems (PS) department, at MPI for Intelligent Systems in Tübingen. His goal
+              is to develop
+              human-centered AI that perceives humans, understands their behavior and helps them to achieve their goals.
+              Potential
+              applications include Augmented/Virtual Reality (AR/VR), Human-Computer Interaction (HCI), and Human-Robot
+              Interaction
+              (HRI).
+
+
+            </div>
+          </div>
+
+          <div id="member" style="display:flex;width:100%;">
+            <img src="./profiles/2022/Dr.Robert Wang.jpg" style="align-self:center;width:150px;height: 150px;">
+            <div style="text-align:left;margin-left:10px;margin-top:20px">
+              <b><a
+                  href="https://www.google.com/url?q=https%3A%2F%2Fhughw19.github.io&sa=D&sntz=1&usg=AOvVaw29aiBNPiw_IvGn33FEYohs">Dr.
+                  Robert Wang</a></b>
+              supports a computer vision and machine perception team at Facebook Reality Labs / Oculus developing and
+              shipping
+              egocentric hand-tracking, body-tacking and and human understanding technology for augmented reality and
+              virtual reality.
+              Prior to that he had co-founded a small company, Nimble VR (acquired by Facebook) that built skeletal
+              hand-tracking
+              software.
+            </div>
+          </div>
+
+        </div>
+
+        <h1 id="organizers">Organizers</h1>
+
+        <li id="topicstyle2">Prof. Antonis Argyros (FORTH)</li>
+        <li id="topicstyle2">Dr. Anil Armagan (Huawei)</li>
+        <li id="topicstyle2">Dr. Guillermo Garcia-Hernando (Niantic)</li>
+        <li id="topicstyle2">Prof. Otmar Hilliges (ETHZ)</li>
+        <li id="topicstyle2">Prof. Tae-Kyun Kim (KAIST and Imperial College London)</li>
+        <li id="topicstyle2">Prof. Vincent Lepetit (ENPC ParisTech and TU Graz)</li>
+        <li id="topicstyle2">Dr. Iason Oikonomidis (FORTH)</li>
+        <li id="topicstyle2">Prof. Angela Yao (NUS)</li>
+
+        <h1 id="chal-committee">Challenge Committee</h1>
+        <li id="topicstyle2">Mr. Sammy Christen (ETH Zürich)</li>
+        <li id="topicstyle2">Mr. Shreyas Hampali (Graz University of Technology)</li>
+        <li id="topicstyle2">Mr. Linlin Yang (Uni Bonn and NUS)</li>
+
+        <h1 id="sponsors">Sponsors</h1>
+
+
+        <div class="sponsors-container">
+          <img class="sponsor-img" src="./profiles/2022/sponsor1.png">
+        </div>
+
+
+        <h1 id="contact">Contact</h1>
+
+
+        <p>hands2022@googlegroups.com</p>
+
+
+        <div id="footer">
+          <p style="align-items: center;text-align: center;">
+
+            <a href="https://youtube.com/@handsworkshop" target="_Blank">
+              <img id="page1" alt="" src="./profiles/youtube.jpg">
+            </a>
+            <a href="https://github.com/handsworkshop" target="_Blank">
+              <img id="page" alt="" src="./profiles/github.png">
+            </a>
+          </p>
+        </div>
+
+        <script>
+
+          var isYearUpdated = false; // 标志，默认未更新年份
+
+          document.getElementById('outer_li_year').addEventListener('click', function (event) {
+            event.preventDefault(); // 阻止默认链接行为
+            // 获取第一个<li>标签中的年份
+            var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+            if (year > '2020') {
+              // 构建新的href
+              var newHref = 'workshop' + year + '.html';
+              // 跳转到新的页面
+              window.location.href = newHref;
+            }
+
+          });
+
+          document.getElementById('workshop_link').addEventListener('click', function (event) {
+            event.preventDefault(); // 阻止默认链接行为
+            if (!isYearUpdated) {
+              var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+              var newHref = 'workshop' + year + '.html';
+              window.location.href = newHref;
+            }
+          });
+
+          document.getElementById('challenge_link').addEventListener('click', function (event) {
+            event.preventDefault(); // 阻止默认链接行为
+            if (!isYearUpdated) {
+              var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+              var newHref = 'challenge' + year + '.html';
+              window.location.href = newHref;
+            }
+          });
+
+          // 获取所有带有id="style3"的a标签
+          var yearLinks = document.querySelectorAll('#style3');
+
+          yearLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+              // 获取点击的年份
+              var selectedYear = this.textContent.trim();
+              if (selectedYear < '2020') {
+                isYearUpdated = true;
+                document.getElementById('current_year').textContent = selectedYear;
+                // 设置标志为已更新年份
+
+                window.location.href = link.href; // 确保使用 href 进行跳转
+              } else {
+                event.preventDefault(); // 阻止默认链接行为
+                document.getElementById('current_year').textContent = selectedYear;
+
+                // 设置标志为已更新年份
+                isYearUpdated = true;
+
+
+                // 关闭下拉菜单（如果需要）
+                // document.getElementById('top_list').style.display = 'none';
+
+                // 可选：添加其他逻辑
+              }
+
+            });
+          });
+
+          var workshopLi = document.querySelector('#workshop_link');
+          workshopLi.classList.add('highlight');
+        </script>
+
+
+</body>
+
+</html>

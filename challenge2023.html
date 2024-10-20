@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta name="keywords" content="hands,ICCV 2023,workshop,pose estimation">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!--- <title></title> --->
+  <title>HANDS Workshop</title>
+
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="header-container">
+      <div id="header">
+        <div id="header-icon-text-container">
+          <div id="header-text-container">
+            <nav class="style1">
+              <ul id="outer_list">
+                <li id="outer_li_year"><a id="current_year" href="#">2023<span id="arrow"></span></a>
+
+                  <ul id="top_list">
+          
+                    <li id="style2"><a id="style3" href="workshop2024.html">2024</a></li>
+                    <li id="style2"><a id="style3" href="workshop2023.html">2023</a></li>
+                    <li id="style2"><a id="style3" href="workshop2022.html">2022</a></li>
+                    <li id="style2"><a id="style3" href="https://sites.google.com/view/hands2019/home">2019</a>
+                    <li id="style2"><a id="style3" href="https://sites.google.com/view/hands2018">2018</a>
+                    <li id="style2"><a id="style3" href="">2017</a>
+                    <li id="style2"><a id="style3" href="https://labicvl.github.io/hand/Hands2016/#home">2016</a>
+                    <li id="style2"><a id="style3" href="">2015</a>
+
+                  </ul>
+                </li>
+
+                <li id="outer_li"><a id="workshop_link" href="#">Workshop</a>
+                </li>
+
+                <li id="outer_li"><a id="challenge_link" href="#">Challenge</a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div id="layout-content">
+        <div id="text-img-container">
+          <div id="img-container">
+            <a href="https://hands-workshop.org/"><img src="logos/hands.png" alt="HANDS" width="100%" /></a>
+          </div>
+          <div id="text-container"></div>
+        </div>
+        <p>
+        <div id="beamer">
+
+
+          <beam>
+            Observing and Understanding <b>Hands</b> in Action
+          </beam></br>
+          <beams>
+            in conjunction with ICCV 2023</br>
+          </beams>
+
+
+
+        </div>
+
+        <br>
+        <div id="menu-container">
+          <div id="menu-item"><a id="style6" href="#overview">Overview</a></div>
+          <div id="menu-item"><a id="style6" href="#challenge1">AssemblyHands</a></div>
+          <div id="menu-item"><a id="style6" href="#challenge2">ARCTIC</a></div>
+          <div id="menu-item"><a id="style6" href="#contact">Contact</a></div>
+        </div>
+        <br>
+        </p>
+        <h1 id="overview">Overview</h1>
+        <p>
+          We present the HANDS23 challenge for hand pose estimation based on <a
+            href="https://assemblyhands.github.io/">AssemblyHands</a> and <a
+            href="https://arctic.is.tue.mpg.de/">ARCTIC</a>. In line with this
+          year’s theme, the challenge consists of two tasks and focuses on hand pose estimation on occlusion and
+          interaction
+          scenarios.
+
+        </p>
+        <p>
+
+          Our first task focuses on <b>egocentric 3D hand pose estimation from a single-view image</b>, which has been
+          less explored
+          due to the limited benchmarks for this task but has great potential and attention for enabling AR/VR
+          applications.
+          We use the recently introduced <a href="https://assemblyhands.github.io/">AssemblyHands</a>. It provides
+          mutli-view captured videos of hand-object
+          interaction
+          during assembling and disassembling of toy-vehicles. In particular, it provides both static and egocentric
+          recordings, and auxiliary cues like action, object, or context information for hand pose estimation.
+        </p>
+        <p>
+          Our second task focuses on <b>consistent motion reconstruction</b> based on <a
+            href="https://arctic.is.tue.mpg.de/">ARCTIC</a>. It is a dataset of hands
+          dexterously
+          manipulating articulated objects and contains videos from 8x 3rd-person views and 1x egocentric view. Besides
+          accurate ground-truth 3D hand and object meshes, it also provides detailed contact information between the
+          hands
+          and
+          objects during manipulation.
+        </p>
+
+        <h4 align="center">Winners and prizes will be announced and awarded during the workshop.</h4>
+        <h4 align="center">Please see <b>General Rules and Participation</b> and <b>Four Tracks</b> below for more
+          details.</h4>
+
+
+
+        <br>
+
+        <h2>General Rules and Participation</h2>
+        <p>We follow the rules of previous challenges and more details can be found in the challenge page.
+        </p>
+        <ul>
+          <li>
+            <p>To participate the challenge, please fill the <b><a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdGo9jja-UJ0NzfJ8zWJl63ucO7SSTaoZajBnkIm-jQTIc1hQ/viewform?usp=pp_url">form</a></b>
+              and accept the terms and conditions.</p>
+          </li>
+          <li>
+            <p>The evaluation server has opened since <b>August 27 for AssemblyHands</b> and <b>September 9 for ARCTIC
+                (<span style="color: red">Updated September 9</span>)</b>.</p>
+          </li>
+          <li>
+            <p>The challenge start on <b>June 15 2023</b> and end on <b>September 15 2023 for AssemblyHands</b> and
+              <b>September 23
+                2023 for ARCTIC (<span style="color: red">Updated September 9</span>)</b>.
+            </p>
+          </li>
+          <li>
+            <p>We will contact participants via emails once we have an important update.</p>
+          </li>
+          <li>
+            <p>Submissions details are provided in the challenge page.</p>
+          </li>
+          <li>
+            <p>Each team must register under only one user id/email id. Teams found to be registered under multiple
+              IDs will be disqualified.</p>
+          </li>
+          <li>
+            <p>In order for participants to be eligible for competition prizes and be included in the official
+              rankings (to be presented during the workshop and subsequent publications), information about their
+              submission must be provided to organizers. Information may include, but not limited to, details on
+              their method, synthetic and real data use, architecture and training details. Check previous challenge
+              publication to have an idea of the information needed.</p>
+          </li>
+          <li>
+            <p>Winning methods may be asked to provide their source code to reproduce their results under strict
+              confidentiality rules if requested by organizers/other participants.</p>
+          </li>
+          <li>
+            <p>For each submission, participants must keep the parameters of their method constant across all
+              testing data for a given task.</p>
+          </li>
+          <li>
+            <p>We invite all winners to advertise their methods via any combination of the following: 2-3 page
+              technical report, winner talk, and poster presentation.</p>
+          </li>
+        </ul>
+        </li>
+
+        </ul>
+
+
+
+
+
+        <br>
+
+        <h1 id="challenge1">Task 1 - Egocentric 3D Hand Pose Estimation</h1>
+
+        <h2>Overview</h2>
+        <p>
+          <a href="https://assemblyhands.github.io/">AssemblyHands</a> is a large-scale benchmark dataset with accurate
+          3D hand pose annotations to facilitate the study of egocentric activities with challenging hand-object
+          interactions. The dataset includes synchronized egocentric and exocentric images sampled from the recent
+          Assembly101 dataset, in which participants assemble and disassemble take-apart toys. The official website is
+          <a href="https://assemblyhands.github.io/">https://assemblyhands.github.io/</a>.
+
+        </p>
+
+        <p align="center" style="margin: 2; padding: 2;">
+          <img src="./profiles/2023/task1_1.jpeg" alt="Image" width="100%" style="display: block; margin: 0 auto;" />
+        <div style="text-align: center;">Figure 1: Row 1-4: exocentric images from static cameras,<br>
+          Row 5: egocentric images from a VR headset</div>
+        </p>
+
+        <h2>Instructions</h2>
+
+        <p>
+          Using AssemblyHands, this challenge focuses on <b>egocentric 3D hand pose estimation from a single-view
+            image</b>. The training, validation, and testing sets contain 383,684, 32,179, and 62,043 images,
+          respectively. We provide the following annotations:
+        <ul>
+          <li>
+            3D hand keypoint coordinates (21 keypoints for each hand)
+          </li>
+          <li>
+            Hand bounding boxes
+          </li>
+          <li>
+            Camera intrinsic & extrinsic matrix for 4 egocentric cameras attached to the headset
+          </li>
+
+        </ul>
+        During test time, we will provide these annotations except for the 3D keypoints. Since the hand bboxes are
+        given, it
+        is not necessary to run hand detection on test data. We expect participants to run your pose estimator on
+        single-view egocentric images.
+        </p>
+
+
+        <p>
+          For a fair comparison, please note the following rules:
+
+        </p>
+
+
+
+
+
+        <h2>Rules</h2>
+        <p>
+        <ul style="padding-inline-start: 16px;">
+          <li><b>DO NOT</b> use any other data from Assembly101 that are not part of the training set for this challenge
+            <ul style="margin-top: 0.3em;">
+              <!-- <br> -->
+              <li>
+                But, it is permitted to use Assembly101's auxiliary data that correspond to the training set, such as
+
+                <ul style="margin-top: 0.3em;">
+                  <!-- <br> -->
+                  <li>
+                    exocentric videos (RGB)
+                  </li>
+
+                  <li>
+                    context cues like action labels and object category information
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </li>
+          <li>It is permitted to use other sources of publicly available datasets</li>
+          <li>It is permitted to use hand mesh models (e.g., MANO)</li>
+          <li><b>DO NOT</b> use the validation set for training or fine-tuning</li>
+          <li>It is permitted to use multi-view egocentric images as input. Note that it is possible the hand is
+            sometimes visible only from a single camera.</li>
+
+        </ul>
+        We ask participants to provide which additional cues are used, and then decide on valid submissions that meet
+        the above criteria.
+        If you consider using other information for training, please feel free to contact us to see if it is feasible
+        for this challenge.
+        </p>
+
+
+
+        <p><b>Data download:</b> The download of egocentric images and keypoint annotation, and the examples of a data
+          loader and visualization are implemented in the toolkit:
+          <a href="https://github.com/facebookresearch/assemblyhands-toolkit">
+            https://github.com/facebookresearch/assemblyhands-toolkit</a>.
+        </p>
+        <p><b>Evaluation:</b> We use a standard evaluation metric: MPJPE in a wrist-relative space.</p>
+        <p><b>Submission Format</b> (updated on Aug 25):
+          We will evaluate two-hand predictions in world coordinates. Please
+          follow this submission instructions: <a
+            href="https://github.com/ut-vision/HANDS2023-AssemblyHands">https://github.com/ut-vision/HANDS2023-AssemblyHands</a>.
+          You can find test
+          images and metadata, and an example of a submission file. Please compress your prediction json into a zip
+          file and upload it to the submission server: <a
+            href="https://codalab.lisn.upsaclay.fr/competitions/15149">https://codalab.lisn.upsaclay.fr/competitions/15149</a>.
+          Our
+          baseline result is listed as the name "NieLin_UTokyo".
+        </p>
+        <p>
+          <b>
+            Acknowledgment:
+          </b>
+
+          We thank Dr. Linlin Yang, Prof. Angela Yao (NUS), Dr. Kun He (Meta), and Prof. Yoichi Sato (UTokyo) for
+          helpful
+          discussions on the design of the challenge. This dataset is based on the internship work at Meta Reality Labs,
+          and thanks go to Dr. Fadime Sener, Dr. Tomas Hodan, Dr. Luan Tran, and Dr. Cem Keskin (Meta). We also thank
+          Mr.
+          Nie Lin (UTokyo) for the baseline construction.
+        </p>
+
+        
+
+
+
+
+
+        <br>
+
+        <h1 id="challenge2">Task 2 - Consistent Motion Reconstruction</h1>
+
+        <h2>Overview</h2>
+
+
+        <p>
+          Our ARCTIC challenge focuses on the task of <b>consistent motion reconstruction</b>, introduced in our <a
+            href="http://download.is.tue.mpg.de/arctic/arctic_april_24.pdf">paper</a>.
+          Given a monocular RGB video, the goal of the task is to reconstruct surfaces of two MANO hands and the
+          articulated object at every frame. This task focuses on the consistency of hand-object contact in the
+          reconstructed hand and object surfaces. In this challenge, we use the official splits of the ARCTIC
+          dataset consisting training, validation and test sets (totalled 2.1M images). This challenge will follow
+          the experiment protocol defined in our <a
+            href="http://download.is.tue.mpg.de/arctic/arctic_april_24.pdf">paper</a>.
+        </p>
+        <p>
+          More details can be found on our website: <a
+            href="https://arctic.is.tue.mpg.de/">https://arctic.is.tue.mpg.de/</a>.
+        </p>
+        <p align="center" style="margin: 2; padding: 2;">
+          <img src="profiles/2023/task1_2.jpeg" alt="Image" width="100%" style="display: block; margin: 0 auto;" />
+        </p>
+        <div>Figure 1: ARCTIC is a dataset of hands dexterously manipulating articulated objects. The dataset contains videos
+          from both eight 3rd-person allocentric views (a) and one 1st-person egocentric view (b), together with accurate
+          ground-truth 3D hand and object meshes, captured with a high-quality motion capture system. ARCTIC goes beyond
+          existing datasets to enable the study of dexterous bimanual manipulation of articulated objects (c) and provides
+          detailed contact information between the hands and objects during manipulation (d-e).<div>
+        <br>
+        <h2>Instructions</h2>
+        <p>
+          Here we briefly summarize the protocol:
+        <ul>
+          <li>
+            Participants will train on the training set (not the validation set).
+          </li>
+          <li>
+            The validation set will be used for local evaluation.
+          </li>
+          <li>
+            The validation set will be used for local evaluation.
+          </li>
+        </ul>
+        </p>
+
+        <p>
+          Participants will use the following data from ARCTIC in this challenge:
+        <ul>
+          <li>
+            MANO hand pose 3D annotation (training only)
+          </li>
+          <li>
+            Articulated object poses 3D annotation (training only)
+          </li>
+          <li>
+            Pre-defined bounding boxes around the object for network inputs
+          </li>
+          <li>
+            Camera extrinsics (not intrinsics in allocentric setting)
+          </li>
+        </ul>
+        </p>
+
+        <p>
+          <b>Sub-Tasks:</b>
+          Since ARCTIC contains 8x 3rd-person views and 1x egocentric view, we hosts two sub-tasks for this challenge:
+          allocentric task and egocentric task. In the former task, participants should use the 3rd-person images for
+          training and evaluation. For the latter task, during training, participants can use all images from the
+          training
+          set (including 3rd-person views). However, during evaluation, only the egocentric view images are used. See
+          Evaluation Protocol in our <a href="http://download.is.tue.mpg.de/arctic/arctic_april_24.pdf">paper</a>. Since
+          the two sub-tasks have the same formulation in terms of input (RGB
+          image) and outputs (hand and object parameters), participating both sub-tasks is simply a matter of changing
+          the
+          training and validation sets. Therefore, we encourage the participants to submit to both sub-tasks. If one is
+          only interested in one sub-task, she can simply not submit results on the other sub-task.
+        </p>
+
+        <h2>5-Minute Talk
+        </h2>
+        <div class="youtube">
+          <center>
+            <iframe width="100%" height="auto" class="elementor-video-iframe" style="display: block;aspect-ratio:16/9;"
+              src="https://www.youtube.com/embed/bvMm8gfFbZ8"
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </center>
+          </iframe>
+        </div>
+
+
+        <h2>Rules</h2>
+        <p>
+          <b>For a fair comparison, please note the following rules:</b>
+        <ul>
+          <li>Only ARCTIC training set is allowed to be used as 3D supervision for training, that means:
+            <ul style="margin-top: 0.3em;">
+
+              <li>The ARCTIC validation set cannot be used to train the model.</li>
+              <li>Annotations from external datasets cannot be used for training.</li>
+            </ul>
+
+          </li>
+          <li>The model cannot assume groundtruth camera intrinsics for allocentric setting.</li>
+          <li>Participants may be requested to submit their code for checking potential rule violation.
+            <ul style="margin-top: 0.3em;">
+
+              <li>The code should be reproducible for the organizers.</li>
+              <li>The reproduced results from the code should not deviate from the reported results.</li>
+              <li>If requested for inspection, participants may not be considered if organizers cannot reproduce the
+                reported results.</li>
+            </ul>
+          </li>
+        </ul>
+        </p>
+
+        <p><span style="color:red">Participants violating any rules may not be considered in the challenge</span>. Feel
+          free to contact the organizer
+          (`zicong.fan@inf.ethz.ch`) for clarification.</p>
+
+        <p>
+          <b>Getting started:</b>
+        <ul>
+          <li>
+            Ensure that you are registered to the challenge via our <a
+              href="https://docs.google.com/forms/d/1nuQP50UVbNecDT9wlD7Xak3eLhC0cbOMcWhhidP5JaM">Google Form</a>.
+          </li>
+          <li>
+            Download data and setting up code for training model using our <a
+              href="https://github.com/zc-alexfan/arctic">code</a>.
+            <ul style="margin-top: 0.3em;">
+
+              <li>
+                The repository includes code for downloading data, training models, visualizing predictions, and
+                evaluating results.
+              </li>
+              <li>
+                This also includes dataset documentation.
+              </li>
+            </ul>
+          </li>
+          <!-- style="margin-top: -0.5em;" -->
+          <li>
+            Instructions for online evaluation will come soon. Meanwhile, you are free to use the validation set for
+            offline evaluation and get started.
+          </li>
+        </ul>
+
+
+        </p>
+        <p>
+          If you encountered any technical problems, feel free to open an issue in our <a
+            href="https://github.com/zc-alexfan/arctic">repo</a>.
+        </p>
+
+        <p>
+          <b>
+            Evaluation:
+          </b>
+        <ul>
+          <li>
+            We will use the Contact Deviation (CDev) metric defined in our paper for evaluation.
+          </li>
+          <li>
+            We will use the MANO and pre-defined articulated object topologies for evaluation, that means:
+            <ul style="margin-top: 0.3em;">
+              <li>
+                For submission convenience, if one directly regresses meshes instead of MANO parameters, she needs to
+                fit MANO and object models to the regressed meshes. The fitted parameters will then be submitted to the
+                test set evaluation server.
+              </li>
+              <li>
+                Participants are free to decimate the hand and object meshes if needed, however, the test server will
+                use the original meshes for evaluation.
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+
+        </p>
+        <p>
+          <b>Submission Instruction:</b> See <a
+            href="https://github.com/zc-alexfan/arctic/blob/master/docs/leaderboard.md">here</a>.
+        </p>
+
+        <p>
+          Updated deadline for ARCTIC submission: Sept 23, 23:59 AoE.
+        </p>
+
+        <p>
+          <span style="color: red;">
+            <b>
+              Clarification:
+            </b>
+          </span>
+        <ul>
+          <span style="color: red;">
+            <li>
+              The given code uses groundtruth instrinsics for the egocentric setting but not the allocentric (see <a
+                href="https://github.com/zc-alexfan/arctic/blob/f91ca2b16f02c4f196ae2b99cf21f5d81486ce45/src/datasets/arctic_dataset.py#L409">here</a>).
+              To be compatible to our baselines, you may assume instrinsic in egocentric setting.
+            </li>
+            <li>
+              In the test set, we do not assume groundtruth wrist depth during evaluation.
+            </li>
+          </span>
+        </ul>
+
+
+        </p>
+
+        <p>
+          <b>Acknowledgement:</b>
+          <br>
+          Constructing ARCTIC was a huge undertaking. The authors deeply thank: <a
+            href="https://ps.is.mpg.de/person/talexiadis">Tsvetelina Alexiadis</a> (TA) for trial
+          coordination; <a href="https://ps.is.mpg.de/person/mhoeschle">Markus Höschle</a> (MH), <a
+            href="https://is.mpg.de/person/senya">Senya Polikovsky</a>, <a
+            href="https://is.mpg.de/person/msafroshkin">Matvey Safroshkin</a>, <a
+            href="https://www.linkedin.com/in/tobiasbauch/?originalSubdomain=de">Tobias Bauch</a> (TB) for the capture
+          setup;
+          MH, TA and <a href="https://ps.is.mpg.de/person/ghenz">Galina Henz</a> for data capture; <a
+            href="https://nghorbani.github.io/">Nima Ghorbani</a> for MoSh++; <a
+            href="https://ps.is.mpg.de/person/ppatel">Priyanka Patel</a> for alignment; <a
+            href="https://is.mpg.de/person/lsanchez">Leyre Sánchez</a>
+          Vinuela, <a href="https://ps.is.mpg.de/person/acmendoza">Andres Camilo Mendoza Patino</a>, <a
+            href="https://ps.is.mpg.de/person/mekinci">Mustafa Alperen Ekinci</a> for data cleaning; TB for Vicon
+          support; MH and
+          <a href="https://ps.is.mpg.de/person/jreinhardt">Jakob Reinhardt</a> for object scanning; <a
+            href="https://ps.is.mpg.de/person/tmcconnell">Taylor McConnell</a> for Vicon support, and data cleaning
+          coordination;
+          <a href="https://ps.is.mpg.de/person/bpellkofer">Benjamin Pellkofer</a> for IT/web support; <a
+            href="https://ps.is.mpg.de/person/nshah">Neelay Shah</a> for evaluation server. We also thank <a
+            href="https://ait.ethz.ch/people/spurra/">Adrian Spurr</a> and <a href="https://ait.ethz.ch/people/xu/">Xu
+            Chen</a>
+          for insightful discussion. OT and DT were partially supported by the German Federal Ministry of Education and
+          Research (BMBF): Tübingen AI Center, FKZ: 01IS18039B". DT’s work was partially performed at the MPI-IS.
+
+          Our visualization benefits hugely from <a href="https://github.com/eth-ait/aitviewer/tree/main">AITViewer</a>.
+        </p>
+
+
+
+        <h1 id="contact">Contact</h1>
+
+        <p>hands2023@googlegroups.com</p>
+
+
+        <div id="footer">
+          <p style="align-items: center;text-align: center;">
+
+            <a href="https://youtube.com/@handsworkshop" target="_Blank">
+              <img id="page1" alt="" src="profiles/youtube.jpg">
+            </a>
+            <a href="https://github.com/handsworkshop" target="_Blank">
+              <img id="page" alt="" src="profiles/github.png">
+            </a>
+          </p>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <script>
+
+var isYearUpdated = false; // 标志，默认未更新年份
+
+document.getElementById('outer_li_year').addEventListener('click', function (event) {
+  event.preventDefault(); // 阻止默认链接行为
+  // 获取第一个<li>标签中的年份
+  var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+  if (year > '2020') {
+    // 构建新的href
+    var newHref = 'workshop' + year + '.html';
+    // 跳转到新的页面
+    window.location.href = newHref;
+  }
+
+});
+
+document.getElementById('workshop_link').addEventListener('click', function (event) {
+  event.preventDefault(); // 阻止默认链接行为
+  if (!isYearUpdated) {
+    var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+    var newHref = 'workshop' + year + '.html';
+    window.location.href = newHref;
+  }
+});
+
+document.getElementById('challenge_link').addEventListener('click', function (event) {
+  event.preventDefault(); // 阻止默认链接行为
+  if (!isYearUpdated) {
+    var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+    var newHref = 'challenge' + year + '.html';
+    window.location.href = newHref;
+  }
+});
+
+// 获取所有带有id="style3"的a标签
+var yearLinks = document.querySelectorAll('#style3');
+
+yearLinks.forEach(function (link) {
+  link.addEventListener('click', function (event) {
+    // 获取点击的年份
+    var selectedYear = this.textContent.trim();
+    if (selectedYear < '2020') {
+      isYearUpdated = true;
+      document.getElementById('current_year').textContent = selectedYear;
+      // 设置标志为已更新年份
+      
+      window.location.href = link.href; // 确保使用 href 进行跳转
+    } else {
+      event.preventDefault(); // 阻止默认链接行为
+      document.getElementById('current_year').textContent = selectedYear;
+
+      // 设置标志为已更新年份
+      isYearUpdated = true;
+
+
+      // 关闭下拉菜单（如果需要）
+      // document.getElementById('top_list').style.display = 'none';
+
+      // 可选：添加其他逻辑
+    }
+
+  });
+});
+
+var workshopLi = document.querySelector('#challenge_link');
+workshopLi.classList.add('highlight');
+
+    </script>
+
+
+</body>
+
+</html>
