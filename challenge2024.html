@@ -26,8 +26,15 @@
               <ul id="outer_list">
                 <li id="outer_li_year"><a id="current_year" href="#">2024<span id="arrow"></span></a>
                   <ul id="top_list">
-                    <!-- <li id="style2"><a id="style3" href="workshop2023.html">2023</a></li> -->
+       
                     <li id="style2"><a id="style3" href="workshop2024.html">2024</a></li>
+                    <li id="style2"><a id="style3" href="workshop2023.html">2023</a></li>
+                    <li id="style2"><a id="style3" href="workshop2022.html">2022</a></li>
+                    <li id="style2"><a id="style3" href="https://sites.google.com/view/hands2019/home">2019</a>
+                    <li id="style2"><a id="style3" href="https://sites.google.com/view/hands2018">2018</a>
+                    <li id="style2"><a id="style3" href="">2017</a>
+                    <li id="style2"><a id="style3" href="https://labicvl.github.io/hand/Hands2016/#home">2016</a>
+                    <li id="style2"><a id="style3" href="">2015</a>
                   </ul>
                 </li>
 
@@ -228,52 +235,80 @@
 
 
 
-        <h1 id="challenge1">AssemblyHands-S2D (2nd edition) </h1>
+            <h1 id="challenge1">AssemblyHands-S2D (2nd edition) </h1>
             <p>
-            <a href="https://assemblyhands.github.io/">AssemblyHands</a> is a large-scale benchmark with accurate 3D hand pose annotations to facilitate the study of egocentric activities with challenging hand-object interactions. The 1st edition of this challenge at ICCV'23 featured egocentric 3D hand pose estimation from a single-view image and made significant progress on the single-view estimation.
+              <a href="https://assemblyhands.github.io/">AssemblyHands</a> is a large-scale benchmark with accurate 3D
+              hand pose annotations to facilitate the study of egocentric activities with challenging hand-object
+              interactions. The 1st edition of this challenge at ICCV'23 featured egocentric 3D hand pose estimation
+              from a single-view image and made significant progress on the single-view estimation.
             </p>
 
             <p align="center" style="margin: 2; padding: 2;">
-                <img src="assets/assemblyhands/s2dhand_hlong.png" alt="Image" width="80%" style="display: block; margin: 0 auto;"/>
+              <img src="assets/assemblyhands/s2dhand_hlong.png" alt="Image" width="80%"
+                style="display: block; margin: 0 auto;" />
             </p>
 
             <p>
-            At ECCV’24, we offer an extended AssemblyHands challenge for multi-view settings, dubbed single-view-to-dual-view adaptation of 3D hand pose estimation (<a ref="https://github.com/ut-vision/S2DHand">S2DHand</a>). Given a pre-trained single-view estimator, participants are asked to develop unsupervised adaptation algorithms to arbitrary-placed dual-view images, assuming camera parameters and keypoint ground-truth of these views are not given. This adaptation would bridge the gap of camera settings more flexibly and allow us to test various camera configurations for better multi-view hand pose estimation. The details of the challenge rules, data, and evaluation are as follows.
+              At ECCV’24, we offer an extended AssemblyHands challenge for multi-view settings, dubbed
+              single-view-to-dual-view adaptation of 3D hand pose estimation (<a
+                ref="https://github.com/ut-vision/S2DHand">S2DHand</a>). Given a pre-trained single-view estimator,
+              participants are asked to develop unsupervised adaptation algorithms to arbitrary-placed dual-view images,
+              assuming camera parameters and keypoint ground-truth of these views are not given. This adaptation would
+              bridge the gap of camera settings more flexibly and allow us to test various camera configurations for
+              better multi-view hand pose estimation. The details of the challenge rules, data, and evaluation are as
+              follows.
             </p>
 
             <h3>Rules</h3>
             <p>
             <ul>
-                <li>Only use the provided pre-trained weights for adaptation. In order to align the backbone capacity across submissions, <b>DO NOT</b> increase the backbone model size or use other backbone networks.</li>
-                <li><b>DO NOT</b> use keypoint ground-truth of validation and test sets from AssemblyHands in any ways, e.g., re-training</li>
-                <li><b>DO NOT</b> use annotated camera extrinsics from AssemblyHands in any ways, including selecting training samples with extrinsics.</li>
-                <li><b>DO NOT</b> use the validation set for training or fine-tuning.</li>
-                <li><b>DO NOT</b> use any other data and annotations from Assembly101.</li>                
-                <li>Participants only allow the use of two-view images during adaptation. </li>
-                <li>We reserve the right to determine if a method is valid and eligible for awards.</li>
+              <li>Only use the provided pre-trained weights for adaptation. In order to align the backbone capacity
+                across submissions, <b>DO NOT</b> increase the backbone model size or use other backbone networks.</li>
+              <li><b>DO NOT</b> use keypoint ground-truth of validation and test sets from AssemblyHands in any ways,
+                e.g., re-training</li>
+              <li><b>DO NOT</b> use annotated camera extrinsics from AssemblyHands in any ways, including selecting
+                training samples with extrinsics.</li>
+              <li><b>DO NOT</b> use the validation set for training or fine-tuning.</li>
+              <li><b>DO NOT</b> use any other data and annotations from Assembly101.</li>
+              <li>Participants only allow the use of two-view images during adaptation. </li>
+              <li>We reserve the right to determine if a method is valid and eligible for awards.</li>
             </ul>
             </p>
-          <p><b>Metric: </b> We use wrist-relative MPJPE for each dual-camera pair.</p>
-          <p><b>Submission: </b>: Please follow this submission instructions: <a href="https://github.com/ut-vision/ECCV2024-AssemblyHands-S2D">[ECCV2024-AssemblyHands-S2D]</a>. You can find test images and metadata, and an example of a submission file. Please compress your prediction json into a zip file and upload it to the submission server: <a href="https://codalab.lisn.upsaclay.fr/competitions/19885">[CodaLab]</a>. Our baseline result after adaptation is listed as the name "LRC". 
-          <p><b>Update Notes: </b><br>
-            (Aug 2): We updated the eval server and submission code.<br>
-            (July 4): We're constructing the dataset and evaluation server tailored for this challenge. Check the S2DHand project for the reference of this task.
-        </p> 
-        <p>
-            If you have any questions regarding task, rules, and technical issues, please contact via the hands group email.
-            Challenge committee: Ruicong Liu, Takehiko Ohkawa, and Kun He
-          </p>
+            <p><b>Metric: </b> We use wrist-relative MPJPE for each dual-camera pair.</p>
+            <p><b>Submission: </b>: Please follow this submission instructions: <a
+                href="https://github.com/ut-vision/ECCV2024-AssemblyHands-S2D">[ECCV2024-AssemblyHands-S2D]</a>. You can
+              find test images and metadata, and an example of a submission file. Please compress your prediction json
+              into a zip file and upload it to the submission server: <a
+                href="https://codalab.lisn.upsaclay.fr/competitions/19885">[CodaLab]</a>. Our baseline result after
+              adaptation is listed as the name "LRC".
+            <p><b>Update Notes: </b><br>
+              (Aug 2): We updated the eval server and submission code.<br>
+              (July 4): We're constructing the dataset and evaluation server tailored for this challenge. Check the
+              S2DHand project for the reference of this task.
+            </p>
+            <p>
+              If you have any questions regarding task, rules, and technical issues, please contact via the hands group
+              email.
+              Challenge committee: Ruicong Liu, Takehiko Ohkawa, and Kun He
+            </p>
 
-          <div style= "background-color: #e9e9e9; border: 1px solid black; text-align: center;">
+            <div style="background-color: #e9e9e9; border: 1px solid black; text-align: center;">
 
-            <h4 align="center">Check out the following links to get started</h4>
-            <!-- <h4 align="center">S2DHand project page: <a href="https://github.com/ut-vision/S2DHand"><b>https://github.com/ut-vision/S2DHand</b></a></h4> -->
-            <h4 align="center">Baseline method (S2DHand): <a href="https://github.com/ut-vision/S2DHand_HANDS2024"><b>https://github.com/ut-vision/S2DHand_HANDS2024</b></a></h4>            
-            <h4 align="center">Submission code: <a href="https://github.com/ut-vision/ECCV2024-AssemblyHands-S2D"><b>https://github.com/ut-vision/ECCV2024-AssemblyHands-S2D</b></a></h4>
-            <h4 align="center">Leaderboard: <a href="https://codalab.lisn.upsaclay.fr/competitions/19885"><b>https://codalab.lisn.upsaclay.fr/competitions/19885</b></a></h4>
-            <h4 align="center">AssemblyHands dataset: <a href="https://assemblyhands.github.io/"><b>https://assemblyhands.github.io/</b></a></h4>
-  
-        </div>
+              <h4 align="center">Check out the following links to get started</h4>
+              <!-- <h4 align="center">S2DHand project page: <a href="https://github.com/ut-vision/S2DHand"><b>https://github.com/ut-vision/S2DHand</b></a></h4> -->
+              <h4 align="center">Baseline method (S2DHand): <a
+                  href="https://github.com/ut-vision/S2DHand_HANDS2024"><b>https://github.com/ut-vision/S2DHand_HANDS2024</b></a>
+              </h4>
+              <h4 align="center">Submission code: <a
+                  href="https://github.com/ut-vision/ECCV2024-AssemblyHands-S2D"><b>https://github.com/ut-vision/ECCV2024-AssemblyHands-S2D</b></a>
+              </h4>
+              <h4 align="center">Leaderboard: <a
+                  href="https://codalab.lisn.upsaclay.fr/competitions/19885"><b>https://codalab.lisn.upsaclay.fr/competitions/19885</b></a>
+              </h4>
+              <h4 align="center">AssemblyHands dataset: <a
+                  href="https://assemblyhands.github.io/"><b>https://assemblyhands.github.io/</b></a></h4>
+
+            </div>
 
             <h1 id="challenge2">ARCTIC</h1>
 
@@ -438,7 +473,7 @@
             <p>To encourage developing generalizable methods, we’ll adopt two datasets featuring different headset
               configurations: UmeTrack and HOT3D, the latter was recently introduced at CVPR.</p>
 
-            <div style="background-color: #e9e9e9; border: 1px solid black; text-align: center; word-wrap: break-word;" >
+            <div style="background-color: #e9e9e9; border: 1px solid black; text-align: center; word-wrap: break-word;">
 
               <h4 align="center">Check out the following links to get started</h4>
               <h4 align="center">Challenge page: <a
@@ -473,56 +508,71 @@
 
     </div>
     <script>
+      var isYearUpdated = false; // 标志，默认未更新年份
+
       document.getElementById('outer_li_year').addEventListener('click', function (event) {
         event.preventDefault(); // 阻止默认链接行为
         // 获取第一个<li>标签中的年份
         var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
-        // 构建新的href
-        var newHref = 'workshop' + year + '.html';
-        // 跳转到新的页面
-        window.location.href = newHref;
+        if (year > '2020') {
+          // 构建新的href
+          var newHref = 'workshop' + year + '.html';
+          // 跳转到新的页面
+          window.location.href = newHref;
+        }
+
       });
+
       document.getElementById('workshop_link').addEventListener('click', function (event) {
         event.preventDefault(); // 阻止默认链接行为
-        // 获取第一个<li>标签中的年份
-        var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
-        // 构建新的href
-        var newHref = 'workshop' + year + '.html';
-        // 跳转到新的页面
-        window.location.href = newHref;
+        if (!isYearUpdated) {
+          var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+          var newHref = 'workshop' + year + '.html';
+          window.location.href = newHref;
+        }
       });
+
       document.getElementById('challenge_link').addEventListener('click', function (event) {
         event.preventDefault(); // 阻止默认链接行为
-        // 获取第一个<li>标签中的年份
-        var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
-        // 构建新的href
-        var newHref = 'challenge' + year + '.html';
-        // 跳转到新的页面
-        window.location.href = newHref;
+        if (!isYearUpdated) {
+          var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+          var newHref = 'challenge' + year + '.html';
+          window.location.href = newHref;
+        }
       });
+
       // 获取所有带有id="style3"的a标签
       var yearLinks = document.querySelectorAll('#style3');
 
       yearLinks.forEach(function (link) {
         link.addEventListener('click', function (event) {
-          event.preventDefault(); // 阻止默认链接行为
-
           // 获取点击的年份
           var selectedYear = this.textContent.trim();
+          if (selectedYear < '2020') {
+            isYearUpdated = true;
+            document.getElementById('current_year').textContent = selectedYear;
+            // 设置标志为已更新年份
 
-          // 更新第一个li中的年份显示
-          document.getElementById('current_year').textContent = selectedYear;
+            window.location.href = link.href; // 确保使用 href 进行跳转
+          } else {
+            event.preventDefault(); // 阻止默认链接行为
+            document.getElementById('current_year').textContent = selectedYear;
 
-          // 关闭下拉菜单
-          // document.getElementById('top_list').style.display = 'none';
+            // 设置标志为已更新年份
+            isYearUpdated = true;
 
-          // 可选：如果需要，可以在这里添加跳转逻辑
-          window.location.href = this.href;
+
+            // 关闭下拉菜单（如果需要）
+            // document.getElementById('top_list').style.display = 'none';
+
+            // 可选：添加其他逻辑
+          }
+
         });
       });
 
-      var workshopLi1 = document.querySelector('#challenge_link');
-      workshopLi1.classList.add('highlight');
+      var workshopLi = document.querySelector('#challenge_link');
+      workshopLi.classList.add('highlight');
     </script>
 </body>
 
