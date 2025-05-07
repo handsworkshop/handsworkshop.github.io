@@ -114,22 +114,25 @@
               // 跳转到新的页面
               window.location.href = newHref;
             }
+
           });
 
           document.getElementById('workshop_link').addEventListener('click', function (event) {
             event.preventDefault(); // 阻止默认链接行为
-            // 始终使用导航栏显示的当前年份
-            var year = document.querySelector('#current_year').textContent.trim();
-            var newHref = 'workshop' + year + '.html';
-            window.location.href = newHref;
+            if (!isYearUpdated) {
+              var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+              var newHref = 'workshop' + year + '.html';
+              window.location.href = newHref;
+            }
           });
 
           document.getElementById('challenge_link').addEventListener('click', function (event) {
             event.preventDefault(); // 阻止默认链接行为
-            // 始终使用导航栏显示的当前年份
-            var year = document.querySelector('#current_year').textContent.trim();
-            var newHref = 'challenge' + year + '.html';
-            window.location.href = newHref;
+            if (!isYearUpdated) {
+              var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+              var newHref = 'challenge' + year + '.html';
+              window.location.href = newHref;
+            }
           });
 
           // 获取所有带有id="style3"的a标签
@@ -143,33 +146,22 @@
                 isYearUpdated = true;
                 document.getElementById('current_year').textContent = selectedYear;
                 // 设置标志为已更新年份
+
                 window.location.href = link.href; // 确保使用 href 进行跳转
               } else {
                 event.preventDefault(); // 阻止默认链接行为
                 document.getElementById('current_year').textContent = selectedYear;
+
                 // 设置标志为已更新年份
                 isYearUpdated = true;
-
-                // 根据当前页面类型决定跳转到workshop还是challenge
-                var currentPage = window.location.pathname.toLowerCase();
-                if (currentPage.includes('challenge')) {
-                  window.location.href = 'challenge' + selectedYear + '.html';
-                } else {
-                  window.location.href = 'workshop' + selectedYear + '.html';
-                }
               }
+
             });
           });
 
-          // 根据当前页面设置高亮状态
-          var currentPage = window.location.pathname.toLowerCase();
-          if (currentPage.includes('challenge')) {
-            var challengeLi = document.querySelector('#challenge_link');
-            challengeLi.classList.add('highlight');
-          } else {
-            var workshopLi = document.querySelector('#workshop_link');
-            workshopLi.classList.add('highlight');
-          }
+          var workshopLi = document.querySelector('#workshop_link');
+          workshopLi.classList.add('highlight');
+
         </script>
 </body>
 
