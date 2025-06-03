@@ -76,8 +76,11 @@
 
                 <br>
                 <div id="menu-container">
-                    <div id="menu-item"><a id="style6" href="#overview">Overview</a></div>
-                    <div id="menu-item"><a id="style6" href="#contact">Contact</a></div>
+                    <div id="menu-item1"><a id="style7" href="#overview">Overview</a></div>
+                    <div id="menu-item1"><a id="style7" href="#challenge1">MegoTrack</a></div>
+                    <div id="menu-item1"><a id="style7" href="#challenge2">Grasp Motion</a></div>
+                    <div id="menu-item1"><a id="style7" href="#challenge3">Tracker</a></div>
+                    <div id="menu-item1"><a id="style7" href="#contact">Contact</a></div>
                 </div>
                 <br>
                 </p>
@@ -85,86 +88,375 @@
                 <h1 id="overview">Overview</h1>
                 <p>
                     We are very happy to invite recently introduced benchmarks, UmeTrack, GraspM3, and GigaHand, and
-                    host a series of challenges. If you are interested in co-organizing a challenge, please contact us
-                    via hands2025@googlegroups.com.</p>
+                    host a series of challenges.To
+                    participate in the challenge, please fill the <a href="#"><b>Google
+                            Form</b></a> and accept the terms and conditions.</p>
+                </p>
+                <h4 align="center">Winners and prizes will be announced and awarded during the workshop.</h4>
+                <h4 align="center">Please see <b>General Rules and Participation</b> and <b>Four Tracks</b> below for
+                    more
+                    details.</h4>
 
-                <h1 id="contact">Contact</h1>
-                <p>hands2025@googlegroups.com</p>
+                <h2>Timeline</h1>
+
+                    <table class="dataintable">
+                        <tbody>
+                            <tr>
+                                <td><b>TBD</b></td>
+                                <td>Challenge data & website release & registration open</td>
+                            </tr>
+                            <tr>
+                                <td><b>TBD</b></td>
+                                <td>Challenges start</td>
+                            </tr>
+                            <tr>
+                                <td><b>TBD</b></td>
+                                <td>Registration close</td>
+                            </tr>
+                            <tr>
+                                <td><b>TBD</b></td>
+                                <td>Challenge submission deadline</td>
+                            </tr>
+                            <tr>
+                                <td><b>TBD</b></td>
+                                <td>Decisions to participants</td>
+                            </tr>
+                            <tr>
+                                <td><b>TBD</b></td>
+                                <td>Technical Report Deadline</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>General Rules and Participation</h1>
+                        <p>We must follow the general challenge rules below and more rules can be found on each offical
+                            track page.
+                        </p>
+                        <ul>
+                            <li>
+                                <p>To participate in the challenge, please fill the <a href="#"><b>Google Form</b></a>
+                                    and accept the
+                                    terms and
+                                    conditions.</p>
+                                <ul>
+                                    <li>
+                                        <p>Please <b>DO</b> use your institution's email address. Please <b>DO NOT</b>
+                                            use your personal
+                                            email address such as gmail.com, qq.com and 163.com.</p>
+                                    </li>
+                                    <li>
+                                        <p>Each team must register under only one user id/email id. The list of team
+                                            members <b>can not be
+                                                changed or rearranged</b> throughout the competition.</p>
+                                    </li>
+                                    <li>
+                                        <p>Each team should use the same email for creating accounts in the evaluation
+                                            server, and use the
+                                            team name (in verbatim) in the evaluation servers.</p>
+                                    </li>
+                                    <li>
+                                        <p>Each individual can only participate in one team and should provide the
+                                            institution email at
+                                            registration.</p>
+                                    </li>
+                                    <li>
+                                        <p>The team name should be formal and we preserve the rights to change the team
+                                            name after
+                                            discussing with teams.</p>
+                                    </li>
+                                    <li>
+                                        <p>Each team will receive a registration email after registration.</p>
+                                    </li>
+                                    <li>
+                                        <p>Teams found to be registered under multiple IDs will be disqualified.</p>
+                                    </li>
+                                    <li>
+                                        <p>For any special cases, please email the organizers.</p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>The primary contact email is important during registration.</p>
+                                <ul>
+                                    <li>
+                                        <p>We will contact participants via emails once we have an important update.</p>
+                                    </li>
+                                    <li>
+                                        <p>If there are any special reasons or ambiguities that may lead to disputes,
+                                            please email the
+                                            organizers first for explanation or approval. Subsequent contact may result
+                                            in disqualification.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>To encourage fair competition, different tracks may include limits like overall model
+                                    size, training
+                                    dataset etc. Details can be found in each track page.</p>
+                                <ul>
+                                    <li>
+                                        <p>Teams may use any publicly available and appropriately licensed data (if
+                                            allowed by the track) to
+                                            train their models in addition to the ones provided by the organizers. </p>
+                                    </li>
+                                    <li>
+                                        <p>The daily and overall submission number may be limited based on tracks.</p>
+                                    </li>
+                                    <li>
+                                        <p>The best performance of a team <b>CAN NOT</b> be hidden during the
+                                            competition. Hiding the best
+                                            performance may result in warning or even disqualification.</p>
+                                    </li>
+                                    <li>
+                                        <p>Any supervised/unsupervised training on the validation/testing set is not
+                                            allowed in this
+                                            competition.</p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>Reproducibility is the responsibility of the winning teams and we invite all teams to
+                                    advertise their
+                                    methods.</p>
+                                <ul>
+                                    <li>
+                                        <p>Winning methods should provide their source code to reproduce their results
+                                            under strict
+                                            confidentiality rules if requested by organizers/other participants. If the
+                                            organizing committee
+                                            determines that the submitted code runs with errors or does not yield
+                                            results comparable to those
+                                            in the final leaderboard and the team is not willing to cooperate, it will
+                                            be disqualified, and
+                                            the winning place will go to the next team in the leaderboard. </p>
+                                    </li>
+                                    <li>
+                                        <p>In order for participants to be eligible for competition prizes and be
+                                            included in the official
+                                            rankings (to be presented during the workshop and subsequent publications),
+                                            information about
+                                            their submission must be provided to organizers. Information may include,
+                                            but not limited to,
+                                            details on their method, synthetic and real data use, architecture and
+                                            training details. </p>
+                                    </li>
+                                    <li>
+                                        <p>For each submission, participants must keep the parameters of their method
+                                            constant across all
+                                            testing data for a given track.</p>
+                                    </li>
+                                    <li>
+                                        <p>To be considered a valid candidate in the competition, the method has to beat
+                                            the baseline by a
+                                            non-trivial margin. A method is invalid if there is no significant technical
+                                            changes. For example,
+                                            if you simply replace a ResNet18 backbone with a ResNet101 backbone, it is
+                                            not counted as a valid
+                                            method. The organizers preserve all rights to determine the validity of the
+                                            method. We will invite
+                                            all valid teams to advertise their methods via 2-3 page technical report,
+                                            and or poster
+                                            presentation.</p>
+                                    </li>
+                                    <li>
+                                        <p>Winners should provide a 2-3 page technical report, winner talk, and poster
+                                            presentation during
+                                            the workshop.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
 
 
-                <div id="footer">
-                    <p style="align-items: center;text-align: center;">
 
-                        <a href="https://youtube.com/@handsworkshop" target="_Blank">
-                            <img id="page1" alt="" src="profiles/youtube.jpg">
-                        </a>
-                        <a href="https://github.com/handsworkshop" target="_Blank">
-                            <img id="page" alt="" src="profiles/github.png">
-                        </a>
-                    </p>
-                </div>
-                <script>
-                    var isYearUpdated = false; // 标志，默认未更新年份
+                        <h1 id="challenge1">MegoTrack</h1>
+                        <p>
+                            In XR applications, accurately estimating hand poses from egocentric cameras is important to
+                            enable social presence and interactions with the environment. The primary
+                            difficulties arise from the integration of multiple calibrated head-mounted cameras and the
+                            on-device
+                            personalization systems for these cameras. Yet, it also provides a new opportunity to
+                            condition pose
+                            estimation on a pre-calibrated hand shape to improve accuracy. This challenge is designed to
+                            address
+                            the unique problems mentioned above. This year the challenge includes two tracks: the hand
+                            pose estimation track and the hand shape estimation track. For the hand pose estimation
+                            track, participants
+                            will be provided with calibrated stereo hand crop videos and MANO shape parameters. The
+                            expected
+                            results in this challenge are the MANO pose parameters. For the hand shape estimation track,
+                            participants will be provided with calibrated stereo hand crop videos, assuming each video
+                            captures a single
+                            subject. The expected result is the MANO shape parameters, which will be evaluated using
+                            vertex
+                            errors in the neutral pose.
+                        </p>
 
-                    document.getElementById('outer_li_year').addEventListener('click', function (event) {
-                        event.preventDefault(); // 阻止默认链接行为
-                        // 获取第一个<li>标签中的年份
-                        var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
-                        if (year > '2020') {
-                            // 构建新的href
-                            var newHref = 'workshop' + year + '.html';
-                            // 跳转到新的页面
-                            window.location.href = newHref;
-                        }
 
-                    });
+                        <div style="background-color: #e9e9e9; border: 1px solid black; text-align: center;">
 
-                    document.getElementById('workshop_link').addEventListener('click', function (event) {
-                        event.preventDefault(); // 阻止默认链接行为
-                        if (!isYearUpdated) {
-                            var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
-                            var newHref = 'workshop' + year + '.html';
-                            window.location.href = newHref;
-                        }
-                    });
+                            <h4 align="center">Check out the following links to get started</h4>
+                            <!-- <h4 align="center">S2DHand project page: <a href="https://github.com/ut-vision/S2DHand"><b>https://github.com/ut-vision/S2DHand</b></a></h4> -->
+                            <h4 align="center">Baseline method: <a href="#"><b>TBD</b></a>
+                            </h4>
+                            <h4 align="center">Submission code: <a href="#"><b>TBD</b></a>
+                            </h4>
+                            <h4 align="center">Leaderboard: <a href="#"><b>TBD</b></a>
+                            </h4>
+                            <h4 align="center">Dataset: <a href="#"><b>TBD</b></a>
+                            </h4>
 
-                    document.getElementById('challenge_link').addEventListener('click', function (event) {
-                        event.preventDefault(); // 阻止默认链接行为
-                        if (!isYearUpdated) {
-                            var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
-                            var newHref = 'challenge' + year + '.html';
-                            window.location.href = newHref;
-                        }
-                    });
+                        </div>
 
-                    // 获取所有带有id="style3"的a标签
-                    var yearLinks = document.querySelectorAll('#style3');
+                        <h1 id="challenge2">Grasp Motion</h1>
 
-                    yearLinks.forEach(function (link) {
-                        link.addEventListener('click', function (event) {
-                            // 获取点击的年份
-                            var selectedYear = this.textContent.trim();
-                            if (selectedYear < '2020') {
-                                isYearUpdated = true;
-                                document.getElementById('current_year').textContent = selectedYear;
-                                // 设置标志为已更新年份
 
-                                window.location.href = link.href; // 确保使用 href 进行跳转
-                            } else {
+                        <p>
+                            Grasp motion generation for human-like multi-fingered
+                            hands has wide applications in animation, robotic grasping, mixed reality interaction, etc.
+                            Therefore,
+                            we design a grasp motion generation challenge that aims at producing physical plausible
+                            grasp motion
+                            trajectories conditioned on 3D input objects. The challenge is built on the GraspM3 dataset.
+                            The
+                            baselines for grasp motion generation will be provided prior to the challenge.
+                        </p>
+
+
+                        <div
+                            style="background-color: #e9e9e9; border: 1px solid black; text-align: center; word-wrap: break-word;">
+
+                            <h4 align="center">Check out the following links to get started</h4>
+                            <h4 align="center">Project page: <a href="#"><b>TBD</b></a></h4>
+                            <h4 align="center">Code: <a href="#"><b>TBD</b></a></h4>
+                            <h4 align="center">Challenge instructions: <a href="#"><b>TBD</b></a>
+                            </h4>
+                            <h4 align="center">Leaderboard: <a href="#"><b>TBD</b></a>
+                            </h4>
+                            <h4 align="center">Dataset: <a href="#/"><b>TBD</b></a></h4>
+                        </div>
+
+                        <h1 id="challenge3">Tracker </h1>
+                        <p>Enabling dexterous robotic hands to perform complex operations
+                            that align with human actions is of great significance. This challenge seeks algorithms that
+                            transfer
+                            human hand-object manipulation trajectories (e.g., bimanual pen capping) to dexterous
+                            robotic hands
+                            in simulation, aiming to reproduce physically plausible interactions. Specifically, given a
+                            reference
+                            motion capture sequence—including the 6D poses of the object(s) and hand(s), as well as the
+                            rotations
+                            of each finger—the algorithm should generate dexterous hand actions. Reference motions,
+                            estimated via vision-based methods, may contain noise due to occlusions and other issues.
+                            Participants can
+                            develop their algorithms based on the open-source data from OakInk V2 and GigaHand. The
+                            tasks
+                            include manipulations involving: 1) Single-hand manipulation with a single object. 2)
+                            Bimanual
+                            manipulation with a single object. 3) Bimanual manipulation with two separate objects (e.g.,
+                            pen cap
+                            and body). Evaluations are based on trajectories from the private test set of the GigaHand
+                            dataset,
+                            which is currently withheld and will be publicly released one week before the submission
+                            deadline.
+                        </p>
+
+                        <div
+                            style="background-color: #e9e9e9; border: 1px solid black; text-align: center; word-wrap: break-word;">
+                            <h4 align="center">Check out the following links to get started</h4>
+                            <h4 align="center">Project page: <a href="#"><b>TBD</b></a>
+                            </h4>
+                            <h4 align="center"> Toolkit for loading and visualization <a href="#"><b>TBD</b></a>
+                            </h4>
+                            <h4 align="center">Challenge instructions: <a href="#"><b>TBD</b></a>
+                            </h4>
+                            <h4 align="center">Simulation environment startup <a href="#"><b>TBD</b></a>
+                            </h4>
+
+                        </div>
+
+
+                        <h1 id="contact">Contact</h1>
+                        <p>hands2025@googlegroups.com</p>
+
+
+                        <div id="footer">
+                            <p style="align-items: center;text-align: center;">
+
+                                <a href="https://youtube.com/@handsworkshop" target="_Blank">
+                                    <img id="page1" alt="" src="profiles/youtube.jpg">
+                                </a>
+                                <a href="https://github.com/handsworkshop" target="_Blank">
+                                    <img id="page" alt="" src="profiles/github.png">
+                                </a>
+                            </p>
+                        </div>
+                        <script>
+                            var isYearUpdated = false; // 标志，默认未更新年份
+
+                            document.getElementById('outer_li_year').addEventListener('click', function (event) {
                                 event.preventDefault(); // 阻止默认链接行为
-                                document.getElementById('current_year').textContent = selectedYear;
+                                // 获取第一个<li>标签中的年份
+                                var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+                                if (year > '2020') {
+                                    // 构建新的href
+                                    var newHref = 'workshop' + year + '.html';
+                                    // 跳转到新的页面
+                                    window.location.href = newHref;
+                                }
 
-                                // 设置标志为已更新年份
-                                isYearUpdated = true;
-                            }
+                            });
 
-                        });
-                    });
+                            document.getElementById('workshop_link').addEventListener('click', function (event) {
+                                event.preventDefault(); // 阻止默认链接行为
+                                if (!isYearUpdated) {
+                                    var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+                                    var newHref = 'workshop' + year + '.html';
+                                    window.location.href = newHref;
+                                }
+                            });
 
-                    var challengeLi = document.querySelector('#challenge_link');
-                    challengeLi.classList.add('highlight');
+                            document.getElementById('challenge_link').addEventListener('click', function (event) {
+                                event.preventDefault(); // 阻止默认链接行为
+                                if (!isYearUpdated) {
+                                    var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+                                    var newHref = 'challenge' + year + '.html';
+                                    window.location.href = newHref;
+                                }
+                            });
 
-                </script>
+                            // 获取所有带有id="style3"的a标签
+                            var yearLinks = document.querySelectorAll('#style3');
+
+                            yearLinks.forEach(function (link) {
+                                link.addEventListener('click', function (event) {
+                                    // 获取点击的年份
+                                    var selectedYear = this.textContent.trim();
+                                    if (selectedYear < '2020') {
+                                        isYearUpdated = true;
+                                        document.getElementById('current_year').textContent = selectedYear;
+                                        // 设置标志为已更新年份
+
+                                        window.location.href = link.href; // 确保使用 href 进行跳转
+                                    } else {
+                                        event.preventDefault(); // 阻止默认链接行为
+                                        document.getElementById('current_year').textContent = selectedYear;
+
+                                        // 设置标志为已更新年份
+                                        isYearUpdated = true;
+                                    }
+
+                                });
+                            });
+
+                            var challengeLi = document.querySelector('#challenge_link');
+                            challengeLi.classList.add('highlight');
+
+                        </script>
 </body>
 
 </html>

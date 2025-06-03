@@ -529,7 +529,7 @@ table.dataintable td {
 	padding: 6px 15px 6px 6px;
 	border: 0px solid #aaa;
 	text-align: left;
-	width:15px;
+	width: 15px;
 }
 
 table.dataintable tr:nth-child(odd) {
@@ -757,8 +757,11 @@ div#member {
 
 div#member img {
 	width: 150px;
+	height: 150px;
+	object-fit: cover;
 	margin: 0px;
 	padding: 0px;
+	border-radius: 50%;
 }
 
 div#member p {
@@ -906,6 +909,38 @@ a#style6 {
 	text-decoration: none;
 	border-radius: 2px;
 	transition: background-color 0.3s ease;
+}
+
+div#menu-item1 {
+	width: 140px;
+	margin: 0px;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #bdbcbb;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 2px #999;
+}
+
+a#style7 {
+
+	display: inline-block;
+	padding: 10px 20px;
+	width: 100px;
+	/*	background-color: #4CAF50;*/
+	background-color: #bdbcbb;
+	color: white;
+	text-decoration: none;
+	border-radius: 2px;
+	transition: background-color 0.3s ease;
+}
+
+a:hover#style7 {
+	background-color: #757574;
 }
 
 a:hover#style6 {
