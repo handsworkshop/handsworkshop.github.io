@@ -525,7 +525,7 @@ table.dataintable th {
 }
 
 table.dataintable td {
-	vertical-align: text-top;
+	vertical-align: middle;
 	padding: 6px 15px 6px 6px;
 	border: 0px solid #aaa;
 	text-align: left;
