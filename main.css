@@ -1065,3 +1065,7 @@ img#page1 {
 		/* 减小间距 */
 	}
 }
+
+.profile-border {
+  border: 2px solid #000;
+}
