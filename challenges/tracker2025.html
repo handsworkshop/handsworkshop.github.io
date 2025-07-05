@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta name="keywords"
+        content="hands,ECCV 2025,workshop,pose estimation,MANO,challenge,keypoint,gesture,robot,grasping,manipulation,hand tracking,motion capture">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+    <link rel="stylesheet" href="../main.css" type="text/css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!--- <title></title> --->
+    <title>HANDS Workshop</title>
+    <!-- MathJax -->
+
+    <!-- End MathJax -->
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-icon-text-container">
+                    <div id="header-text-container">
+                        <nav class="style1">
+                            <ul id="outer_list">
+                                <li id="outer_li_year"><a id="current_year" href="#">2025<span id="arrow"></span></a>
+                                    <ul id="top_list">
+                                        <li id="style2"><a id="style3" href="workshop2025.html">2025</a></li>
+                                        <li id="style2"><a id="style3" href="workshop2024.html">2024</a></li>
+                                        <li id="style2"><a id="style3" href="workshop2023.html">2023</a></li>
+                                        <li id="style2"><a id="style3" href="workshop2022.html">2022</a></li>
+                                        <li id="style2"><a id="style3"
+                                                href="https://sites.google.com/view/hands2019/home">2019</a>
+                                        <li id="style2"><a id="style3"
+                                                href="https://sites.google.com/view/hands2018">2018</a>
+                                        <li id="style2"><a id="style3" href="">2017</a>
+                                        <li id="style2"><a id="style3"
+                                                href="https://labicvl.github.io/hand/Hands2016/#home">2016</a>
+                                        <li id="style2"><a id="style3" href="">2015</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li id="outer_li"><a id="workshop_link" href="#">Workshop</a>
+                                </li>
+
+                                <li id="outer_li"><a id="challenge_link" href="#">Challenge</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+            <div id="layout-content">
+                <div id="text-img-container">
+                    <div id="img-container">
+                        <a href="https://hands-workshop.org/"><img src="../logos/hands.png" alt="HANDS"
+                                width="100%" /></a>
+                    </div>
+                    <div id="text-container"></div>
+                </div>
+                <p>
+                <div id="beamer">
+                    <beam>
+                        <b>Dexterous HO Tracker 2025</b>
+                    <beam></br>
+                        Tracking Dexterous Hand-Object Manipulation from Human Demonstration
+                    </beam></br>
+                    <beams>
+                        in conjunction with HANDS Workshop at ICCV 2025</br>
+                    </beams>
+                </div>
+
+                <br>
+                <!-- <div id="menu-container">
+                    <div id="menu-item1"><a id="style7" href="#overview">Overview</a></div>
+                    <div id="menu-item1"><a id="style7" href="#challenge1">MegoTrack</a></div>
+                    <div id="menu-item1"><a id="style7" href="#challenge2">Grasp Motion</a></div>
+                    <div id="menu-item1"><a id="style7" href="#challenge3">Tracker</a></div>
+                    <div id="menu-item1"><a id="style7" href="#contact">Contact</a></div>
+                </div> -->
+                <br>
+                </p>
+
+                <h2 id="overview">Overview</h2>
+                <p>
+                    Enabling dexterous robotic hands to perform complex operations that align with human actions is of great significance. This challenge seeks algorithms that transfer <b>human hand-object manipulation trajectories</b> (e.g., bimanual pen capping) to <b>dexterous robotic hands in simulation</b>, aiming to reproduce physically plausible interactions. Specifically, given a reference motion capture sequence—including the 6D poses of the object(s) and hand(s), as well as the angle of each finger—the algorithm should <b>generate dexterous hand actions</b> that can fulfill the desired object motion in simulator (Issac Gym). 
+                    
+                    Reference motions, estimated via vision-based methods (e.g. MoCap), may contain noise. Participants should develop their algorithms based on the open-source data from OakInk2 and GigaHand. The tasks include manipulations involving
+                </p>
+                <p>
+                    <ul>
+                        <li> 1) Single-hand manipulation with a single object. </li>
+                        <li> 2) Bimanual manipulation with a single object. </li> 
+                        <li> 3) Bimanual manipulation with two separate objects (e.g., pen cap and body). </li>
+                    </ul>
+                </p>
+
+                <p>
+                    Evaluations are based on trajectories from the private test set of the <a href="https://oakink.net/v2/">OakInk2</a> and <a href="https://ivl.cs.brown.edu/research/gigahands.html">GigaHand</a> dataset, which is currently withheld and will be publicly released around one week before the submission deadline.
+                </p>
+                <h4 align="center">Submission deadline for results: October 1, 2025 (11:59PM PST).</h4>
+                <h4 align="center">Results will be shared during the HANDS workshop at ICCV 2025</h4>
+
+                <h2>Timeline</h2>
+
+                    <table class="dataintable">
+                        <tbody>
+                            <tr>
+                                <td><b>July 7 2025 (Opened)</b></td>
+                                <td>Website release & registration open</td>
+                            </tr>
+                            <tr>
+                                <td><b>July 14 2025 </b></td>
+                                <td>Training sequences, simulation env & evaluation protocols released</td>
+                            </tr>
+                            <tr>
+                                <td><b>September 22 2025</b></td>
+                                <td>Evaluation sequences released</td>
+                            </tr>
+                            <tr>
+                                <td><b>October 1 2025</b></td>
+                                <td>Model submission Deadline</td>
+                            </tr>
+                            <tr>
+                                <td><b>October 17 2025</b></td>
+                                <td>Technical Report Deadline for Challenges (Invited Teams)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                <h2>Rules for Participation</h2>
+                    <p>
+                        This challenge does not strictly separate the training set and evaluation set as in conventional benchmarks. All provided sequences are noisy kinematic data. The core task is to <b>design and train a tracker model</b> that can imitate the human demonstration and learn the dynamics within Isaac Gym.
+                    </p>
+
+                    <p>
+                        We distinguish <b>Training Sequences</b> and <b>Evaluation Sequences</b> as follows:
+                    </p>
+
+                    <ul>
+                        <li><b>Training Sequences</b> will be released earlier (July 16) to allow participants to develop and debug their tracker models.</li>
+                        <li><b>Evaluation Sequences</b> will be released around one week before the submission deadline (Oct 1). These sequences can also be used for training.</li>
+                    </ul>
+
+                    <p>
+                        At the final submission deadline (Oct 1), participants are required to submit a set of model weights that can perform rollout within our provided Isaac Gym simulation environment. <b>Training code is not required.</b> 
+                    </p>
+                    <p>
+                        The models will be evaluated by us using a <b>withheld, augmented evaluation set</b>, which are similar but not identical to the released Evaluation Sequences. This evaluation process may take some time.
+                    </p>
+
+                    <p> Methods must outperform the current baseline model <a href="https://maniptrans.github.io">ManipTrans</a> to be considered valid.
+
+                <h2>Dataset and Simulation Env.</h2>
+                to be released on July 16, 2025
+
+
+
+                    <h2 id="contact">Contact</h2>
+                    <p>hands2025@googlegroups.com</p>
+                    also cc 
+                    
+                    <p>likailinsjtu@gmail.com, rao_fu@brown.edu, siriusyang@sjtu.edu.cn</p>
+
+
+                    <div id="footer">
+                        <p style="align-items: center;text-align: center;">
+
+                            <a href="https://youtube.com/@handsworkshop" target="_Blank">
+                                <img id="page1" alt="" src="profiles/youtube.jpg">
+                            </a>
+                            <a href="https://github.com/handsworkshop" target="_Blank">
+                                <img id="page" alt="" src="profiles/github.png">
+                            </a>
+                        </p>
+                    </div>
+                    <script>
+                        var isYearUpdated = false; // 标志，默认未更新年份
+
+                        document.getElementById('outer_li_year').addEventListener('click', function (event) {
+                            event.preventDefault(); // 阻止默认链接行为
+                            // 获取第一个<li>标签中的年份
+                            var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+                            if (year > '2020') {
+                                // 构建新的href
+                                var newHref = 'workshop' + year + '.html';
+                                // 跳转到新的页面
+                                window.location.href = newHref;
+                            }
+
+                        });
+
+                        document.getElementById('workshop_link').addEventListener('click', function (event) {
+                            event.preventDefault(); // 阻止默认链接行为
+                            if (!isYearUpdated) {
+                                var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+                                var newHref = 'workshop' + year + '.html';
+                                window.location.href = newHref;
+                            }
+                        });
+
+                        document.getElementById('challenge_link').addEventListener('click', function (event) {
+                            event.preventDefault(); // 阻止默认链接行为
+                            if (!isYearUpdated) {
+                                var year = document.querySelector('#outer_list > li:first-child > a').textContent.trim();
+                                var newHref = 'challenge' + year + '.html';
+                                window.location.href = newHref;
+                            }
+                        });
+
+                        // 获取所有带有id="style3"的a标签
+                        var yearLinks = document.querySelectorAll('#style3');
+
+                        yearLinks.forEach(function (link) {
+                            link.addEventListener('click', function (event) {
+                                // 获取点击的年份
+                                var selectedYear = this.textContent.trim();
+                                if (selectedYear < '2020') {
+                                    isYearUpdated = true;
+                                    document.getElementById('current_year').textContent = selectedYear;
+                                    // 设置标志为已更新年份
+
+                                    window.location.href = link.href; // 确保使用 href 进行跳转
+                                } else {
+                                    event.preventDefault(); // 阻止默认链接行为
+                                    document.getElementById('current_year').textContent = selectedYear;
+
+                                    // 设置标志为已更新年份
+                                    isYearUpdated = true;
+                                }
+
+                            });
+                        });
+
+                        var challengeLi = document.querySelector('#challenge_link');
+                        challengeLi.classList.add('highlight');
+
+                    </script>
+</body>
+
+</html>
