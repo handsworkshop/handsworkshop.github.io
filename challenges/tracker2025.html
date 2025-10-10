@@ -104,7 +104,7 @@
                 <p>
                     Evaluations are based on trajectories from the private test set of the <a href="https://oakink.net/v2/">OakInk2</a> and <a href="https://ivl.cs.brown.edu/research/gigahands.html">GigaHand</a> dataset, which is currently withheld and will be publicly released around one week before the submission deadline.
                 </p>
-                <h4 align="center">Submission deadline for results: October 1, 2025 (11:59PM PST).</h4>
+                <h4 align="center">Submission deadline for results: October 15, 2025 (11:59PM AoE).</h4>
                 <h4 align="center">Results will be shared during the HANDS workshop at ICCV 2025</h4>
 
                 <h2>Timeline</h2>
@@ -124,7 +124,7 @@
                                 <td>Evaluation sequences released</td>
                             </tr>
                             <tr>
-                                <td><b>October 1 2025</b></td>
+                                <td><del>October 1 2025</del> <b>October 15 2025</b></td>
                                 <td>Model submission Deadline</td>
                             </tr>
                             <tr>
@@ -145,11 +145,11 @@
 
                     <ul>
                         <li><b>Training Sequences</b> will be released earlier (July 14) to allow participants to develop and debug their tracker models.</li>
-                        <li><b>Evaluation Sequences</b> will be released around one week before the submission deadline (Oct 1). These sequences can also be used for training.</li>
+                        <li><b>Evaluation Sequences</b> will be released around one week before the submission deadline. These sequences can also be used for training.</li>
                     </ul>
 
                     <p>
-                        At the final submission deadline (Oct 1), participants are required to submit a set of model weights that can perform rollout within our provided Isaac Gym simulation environment. <b>Training code is not required.</b> 
+                        At the final submission deadline (<del>Oct 1</del> Oct 15), participants are required to submit a set of model weights that can perform rollout within our provided Isaac Gym simulation environment. <b>Training code is not required.</b> 
                     </p>
                     <p>
                         The models will be evaluated by us using a <b>withheld, augmented evaluation set</b>, which are similar but not identical to the released Evaluation Sequences. This evaluation process may take some time.
@@ -160,10 +160,10 @@
                 <h2>Dataset and Simulation Env.</h2>
                 
                 <p>
-                The OakInk2 training set samples and visualization code are available at <a href="https://huggingface.co/datasets/LiKailin/HO-Tracker">huggingface</a>.
+                The OakInk2 training / evaluation dataset and visualization code are available at <a href="https://huggingface.co/datasets/LiKailin/HO-Tracker">huggingface</a>.
                 </p>
                 <p>
-                The official evaluation environment, along with the scoring code, will be released very shortly.
+                The official evaluation environment, baseline implementations, data preparation scripts, and evaluation utilities are available at <a href="https://github.com/KailinLi/HO-Tracker-Baseline">GitHub</a>.
                 </p>
 
 
